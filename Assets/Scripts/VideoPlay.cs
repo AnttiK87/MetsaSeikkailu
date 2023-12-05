@@ -26,6 +26,7 @@ public class VideoPlay : MonoBehaviour
     {
         if (panel != null)
         {
+            videoPlayer1.Prepare();
             panel.SetActive(true);
         }
     }
@@ -47,6 +48,7 @@ public class VideoPlay : MonoBehaviour
     {
         button1.SetActive(false);
         button2.SetActive(true);
+        videoPlayer2.Prepare();
     }
 
     void VideoPlaybackComplete2(VideoPlayer vp2)
