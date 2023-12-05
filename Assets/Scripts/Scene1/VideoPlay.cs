@@ -55,5 +55,6 @@ public class VideoPlay : MonoBehaviour
     {
         panel.SetActive(false);
         telkka.SetActive(true);
+        Destroy(panel);
     }
 }
