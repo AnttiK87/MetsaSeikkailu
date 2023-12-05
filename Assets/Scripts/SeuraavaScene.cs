@@ -5,11 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SeuraavaScene : MonoBehaviour
 {
-    private void OnMouseUpAsButton()
-    {
-        LoadNextScene();
-    }
-
     public void LoadNextScene()
     {
         // Get the index of the current active scene
