@@ -16,7 +16,7 @@ public class VideoPlay : MonoBehaviour
     public GameObject telkka;
     private void OnMouseUpAsButton()
     {
-        Debug.Log("nappia painettu");
+        //Debug.Log("nappia painettu");
         ActivateObject();
     }
 
