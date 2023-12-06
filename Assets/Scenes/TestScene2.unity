@@ -1033,7 +1033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1069726081}
   rotationSpeed: 1
-  inactivityDuration: 5
+  inactivityDuration: 6.5
 --- !u!1 &1596381368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,7 +1132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToActivate: {fileID: 26147487}
-  activationDelay: 5
+  activationDelay: 7
 --- !u!4 &1779457167
 Transform:
   m_ObjectHideFlags: 0
