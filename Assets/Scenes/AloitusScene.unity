@@ -257,6 +257,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222220404}
   m_CullTransparentMesh: 1
+--- !u!1 &287586411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 287586412}
+  - component: {fileID: 287586414}
+  - component: {fileID: 287586413}
+  m_Layer: 5
+  m_Name: KarhuLogo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &287586412
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287586411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 437008797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 100, y: 100}
+  m_SizeDelta: {x: 180, y: 180}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &287586413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287586411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3033604a1827c904b8f54d77bffe09cd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &287586414
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287586411}
+  m_CullTransparentMesh: 1
 --- !u!1 &437008793
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +432,7 @@ RectTransform:
   - {fileID: 1137926103}
   - {fileID: 1380253169}
   - {fileID: 1606605582}
+  - {fileID: 287586412}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -728,11 +804,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "T\xE4ss\xE4 escape room -tyyppisess\xE4 peliss\xE4 sinut lukitaan virtuaaliseen
-    mets\xE4\xE4n, jossa jokainen oksa ja kivi k\xE4tkee sis\xE4ll\xE4\xE4n salaisuuksia.\n\nTeht\xE4v\xE4n\xE4si
-    on l\xF6yt\xE4\xE4 tie ulos mets\xE4st\xE4 ennen auringonlaskua, hy\xF6dynt\xE4en
-    vihjeit\xE4, joita mets\xE4n el\xE4imet tarjoavat. Matkan varrella opit kiinnostavia
-    faktoja mets\xE4st\xE4 ja sen asukkaista. \n\nOletko valmis sukeltamaan syv\xE4lle
-    mets\xE4n syd\xE4meen ja paljastamaan sen salat?"
+    mets\xE4\xE4n, jossa jokainen kanto ja kivi k\xE4tkee sis\xE4ll\xE4\xE4n salaisuuksia.\r\n\r\nTeht\xE4v\xE4n\xE4si
+    on auttaa mets\xE4n asukasta ja p\xE4\xE4st\xE4 perille hy\xF6dynt\xE4en vihjeit\xE4
+    ymp\xE4rill\xE4si. Matkan varrella opit kiinnostavia faktoja mets\xE4st\xE4 ja
+    sen asukkaista. \r\n\r\nOletko valmis sukeltamaan syv\xE4lle mets\xE4n syd\xE4meen
+    ja paljastamaan sen salat?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -1159,10 +1235,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 437008797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.0025024414, y: 0}
-  m_SizeDelta: {x: -0.0050049, y: 0}
+  m_SizeDelta: {x: 1919.995, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1831496960
 MonoBehaviour:
