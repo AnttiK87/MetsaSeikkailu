@@ -11,7 +11,8 @@ public class PelinKestoScripti : MonoBehaviour // scripti joka laskee pelin kest
 
     void Awake() // ei tuhoa tätä scriptiä kun vaihdetaan sceneä
     {
-        DontDestroyOnLoad(gameObject); 
+        DontDestroyOnLoad(gameObject);
+       // PlayerPrefs.DeleteKey("EnnatysAika"); // VÄLIAIKAINEN 
     }
 
     public void KaynnistaAjastin() // aloittaa ajastimen
@@ -36,12 +37,25 @@ public class PelinKestoScripti : MonoBehaviour // scripti joka laskee pelin kest
         }
     }
 
-    public string HaeKulunutAika() // palauttaa kuluneen ajan
+    public int HaeKuluneetMinuutit() //palauttaa kuluneet minuutit
     {
-            int kokonaisaikaSekunteina = (int)(kulunutAika); // kokonaisaika sekunteina on kulunut aika
-            int minuutit = kokonaisaikaSekunteina / 60; // minuutit on kokonaisaika sekunteina jaettuna 60
-            int sekunnit = kokonaisaikaSekunteina % 60; // sekunnit on jakojäännös 60 ja kokonaisaika sekunteina
-            return string.Format("{0:00}:{1:00}", minuutit, sekunnit); // palauttaa kuluneen ajan muodossa mm:ss
+        return (int)(kulunutAika / 60); // lasketaan kuluneet minuutit jakamalla kulunut sekunttiaika 60:llä
     }
+
+    public int HaeKuluneetSekunnit() // palauttaa kuluneet sekunnit
+    {
+        return (int)(kulunutAika % 60); // lasketaan kuluneet sekunnit jakamalla kulunut sekunttiaika 60:llä ja ottamalla jakojäännös
+    }
+
+    public void TarkistaJaTallennaEnnatysAika() // tarkistaa onko kulunut aika uusi ennätysaika ja tallentaa sen
+    {
+        float vanhaEnnatys = PlayerPrefs.GetFloat("EnnatysAika", float.MaxValue); // haetaan vanha ennätysaika
+        if (kulunutAika < vanhaEnnatys) // jos kulunut aika on pienempi kuin vanha ennätysaika
+        {
+            PlayerPrefs.SetFloat("EnnatysAika", kulunutAika); // tallennetaan uusi ennätysaika
+            PlayerPrefs.Save(); // varmistetaan, että tieto tallennetaan välittömästi
+        }
+    }
+
 }
 
