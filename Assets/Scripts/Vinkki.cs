@@ -5,23 +5,83 @@ using UnityEngine;
 public class Vinkki : MonoBehaviour
 {
     public GameObject panelVinkki1;
+    public GameObject panelVinkki2;
+    public GameObject panelVinkki3;
+    public GameObject panelVinkki4;
+    private string klikattu;
+    private bool isEnabled = false;
 
-    private void OnMouseUpAsButton()
+    public static Vinkki VinkkiInstanssi;
+    private void Awake()
     {
-        //Debug.Log("nappia painettu");
-        ActivateVinkki1();
+        if (VinkkiInstanssi == null)
+        {
+            VinkkiInstanssi = this;
+        }
     }
 
-    void ActivateVinkki1()
+    private void Update()
     {
-        if (panelVinkki1 != null)
+        // Check for mouse click
+        if (Input.GetMouseButtonDown(0))
+        {
+            // Raycast to determine what object was clicked
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the clicked object has a name
+                if (hit.collider.gameObject.tag != null)
+                {
+                    // Get the name of the clicked object
+                    klikattu = hit.collider.gameObject.tag;
+
+                    // Now you can use the 'clickedObjectName' variable as needed
+                    Debug.Log("Clicked object name: " + klikattu);
+                    if (isEnabled)
+                    {
+                        ActivateVinkki(klikattu);
+                    }
+                }
+            }
+        }
+    }
+
+
+    void ActivateVinkki(string klikattuObjekti)
+    {
+        if (klikattuObjekti.Equals("Vinkki1"))
         {
             panelVinkki1.SetActive(true);
+        }
+        else if (klikattuObjekti.Equals("Vinkki2"))
+        {
+            panelVinkki2.SetActive(true);
+        }
+        else if (klikattuObjekti.Equals("Vinkki3"))
+        {
+            panelVinkki3.SetActive(true);
+        }
+        else if (klikattuObjekti.Equals("Vinkki4"))
+        {
+            panelVinkki4.SetActive(true);
         }
     }
 
     public void suljeVinkki1()
     {
         panelVinkki1.SetActive(false);
+        panelVinkki2.SetActive(false);
+        panelVinkki3.SetActive(false);
+        panelVinkki4.SetActive(false);
+    }
+
+    public void AktivoiScript()
+    {
+        // Set the flag to true
+        isEnabled = true;
+
+        // Optionally, you can perform additional setup or actions here
     }
 }
