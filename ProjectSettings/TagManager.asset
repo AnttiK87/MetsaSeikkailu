@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Kysymykset
+  - telkka
+  - Vinkki1
+  - Vinkki2
+  - Vinkki3
+  - Vinkki4
   layers:
   - Default
   - TransparentFX

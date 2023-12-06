@@ -70,6 +70,6 @@ public class Kysymykset : MonoBehaviour
 
     void Aktivoi()
     {
-        Vinkki2.Vinkki2Instanssi.AktivoiScript();
+        Vinkki.VinkkiInstanssi.AktivoiScript();
     }
 }
