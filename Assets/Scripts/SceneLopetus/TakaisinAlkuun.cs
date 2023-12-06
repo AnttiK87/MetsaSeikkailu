@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TakaisinAlkuun : MonoBehaviour
 {
@@ -18,6 +19,6 @@ public class TakaisinAlkuun : MonoBehaviour
     //kun painetaan nappia, niin palataan 0. sceneen
     public void Takaisin()
     {
-        Application.LoadLevel(0);
+        SceneManager.LoadScene(0);
     }
 }
