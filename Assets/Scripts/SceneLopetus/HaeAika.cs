@@ -12,7 +12,7 @@ public class HaeAika : MonoBehaviour
         PelinKestoScripti ajastin = FindObjectOfType<PelinKestoScripti>(); //etsit‰‰n pelinkestoscripti ja tallennetaan se muuttujaan
         if (ajastin != null)
         {
-            aikaTeksti.text = "Seikkailusi kesto: " + ajastin.HaeKulunutAika().ToString("F2") + " sekuntia";
+            aikaTeksti.text = "Seikkailusi kesto:  " + ajastin.HaeKulunutAika() + "";
         }
     }
 }
