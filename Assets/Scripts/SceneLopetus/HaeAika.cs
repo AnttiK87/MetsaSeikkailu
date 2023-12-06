@@ -1,19 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class HaeAika : MonoBehaviour
+public class HaeAika : MonoBehaviour // hakee pelin keston ja n‰ytt‰‰ sen tekstin‰
 {
-    public Text aikaTeksti;
+    public TextMeshProUGUI aikaTeksti;  // teksti johon tulee aika
 
-    void Start()
+    void Start() // kutsutaan kun scene alkaa
     {
-        PelinKestoScripti ajastin = FindObjectOfType<PelinKestoScripti>(); //etsit‰‰n pelinkestoscripti ja tallennetaan se muuttujaan
+        if (aikaTeksti == null) // jos aikaTeksti‰ ei ole asetettu inspectorissa
+        {
+            print("aikaTeksti not assigned in the Inspector"); // annetaan error
+            return;
+        }
+
+        PelinKestoScripti ajastin = FindObjectOfType<PelinKestoScripti>(); // etsit‰‰n pelin kesto scripti
+
         if (ajastin != null)
         {
-            aikaTeksti.text = "Seikkailusi kesto:  " + ajastin.HaeKulunutAika() + "";
+            aikaTeksti.text = "Seikkailusi kesto: " + ajastin.HaeKulunutAika(); // aikaTekstiin tulee seikkailun kesto
+        }
+        else
+        {
+            print("PelinKestoScripti not found"); // jos pelin kesto scripti‰ ei lˆydy annetaan error
         }
     }
 }
+
 

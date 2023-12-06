@@ -5,21 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class AloitaPeliJaTimer : MonoBehaviour
 {
-    public void StartGameAndTimer()
+    public void StartGameAndTimer() // aloittaa pelin ja ajastimen
     {
-        // Start the timer
-        PelinKestoScripti timerScript = FindObjectOfType<PelinKestoScripti>();
-        if (timerScript != null)
+
+        PelinKestoScripti timerScript = FindObjectOfType<PelinKestoScripti>(); // etsitään pelin kesto scripti
+
+        if (timerScript != null) // jos pelin kesto scripti löytyy
         {
             timerScript.KaynnistaAjastin();
         }
         else
         {
-            // If the timer script isn't found, it could be on a non-persistent GameObject.
-            // Consider alternative approaches like using static variables or Singleton pattern.
+            print("PelinKestoScripti not found"); // jos pelin kesto scriptiä ei löydy annetaan error
         }
 
-        // Load Scene 1
-        SceneManager.LoadScene(1); // Assuming Scene 1 is indexed as 1
+        SceneManager.LoadScene(1); // loadataan scene 1 eli peli alkaa
     }
 }

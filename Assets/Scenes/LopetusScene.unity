@@ -1453,7 +1453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8483714ad117bf648b4dd98be7c3736a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aikaTeksti: {fileID: 0}
+  aikaTeksti: {fileID: 792355555}
 --- !u!4 &1934416494
 Transform:
   m_ObjectHideFlags: 0
