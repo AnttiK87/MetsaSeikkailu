@@ -19,7 +19,7 @@ public class kysymykset : MonoBehaviour
     public GameObject objekti3;
     public GameObject objekti4;
     public GameObject nuoliSeuraavaScene;
-    public GameObject Kyselija;
+    public GameObject kyselija;
 
     //laskuri, että ensimmäinen ui ruutu näytetään vain ensimmäisellä kertaa
     private int counter = 0;
@@ -121,7 +121,13 @@ public class kysymykset : MonoBehaviour
 
         //Avataan nuoli jolla pääsee seuraavaan sceneen
         nuoliSeuraavaScene.SetActive(true);
-        Kyselija.SetActive(false); //kyselijä poistuu näyttämöltä tarvittaessa
+
+        if (kyselija != null)
+            {
+                kyselija.SetActive(false); //kyselijä poistuu näyttämöltä tarvittaessa
+        }
+        
+ 
     }
 
     //Kutsutaan vinkki luokkan metodia ja aktivoidaan vinkkien näyttö
