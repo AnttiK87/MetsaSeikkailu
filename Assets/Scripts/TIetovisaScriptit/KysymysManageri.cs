@@ -93,6 +93,10 @@ public class KysymysManageri : MonoBehaviour
     {
         SceneManager.LoadScene("TestScene5");
     }
+    public void Siirry6Sceneen()
+    {
+        SceneManager.LoadScene("TestScene6");
+    }
     public void ValitseVastaus(int vastausNumero)
     {
 
