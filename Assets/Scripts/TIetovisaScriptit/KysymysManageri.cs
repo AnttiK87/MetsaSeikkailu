@@ -16,11 +16,13 @@ public class KysymysManageri : MonoBehaviour
     public GameObject Vaarintxt;
     private int oikeatVastauksetLaskuri = 0;
     private int valittuVastaus;
+    public Canvas SuljeAloitusTervehdys;
 
     public Text KysymysTxt;
 
     private void Start()
     {
+        
         oikeatVastauksetLaskuri = 0;
         LuoKysymys();
 
@@ -37,7 +39,11 @@ public class KysymysManageri : MonoBehaviour
         Vaarintxt.SetActive(false);
 
     }
-
+    public void SuljeAloitusCanvas()
+    {
+        // Sulje canvas
+        SuljeAloitusTervehdys.gameObject.SetActive(false);
+    }
 
     public void AktivoiTietoVisaCanvas()
     {
@@ -109,6 +115,8 @@ public class KysymysManageri : MonoBehaviour
             if (QnA.Count > 0)
             {
                 Vaarintxt.SetActive(false);
+                // P√§ivit√§ nykyinenKysymys uudelleen
+                nykyinenKysymys = Random.Range(0, QnA.Count);
                 LuoKysymys();
             }
             else
@@ -117,7 +125,7 @@ public class KysymysManageri : MonoBehaviour
                 // Kaikki kysymykset on vastattu, tarkista voitto
                 TarkistaVoitto();
             }
-        }
+    }
         else
         {
             // V‰‰r‰ vastaus
@@ -136,7 +144,7 @@ public class KysymysManageri : MonoBehaviour
     {
         Debug.Log("TarkistaVoitto, oikeatVastauksetLaskuri: " + oikeatVastauksetLaskuri);
 
-        if (oikeatVastauksetLaskuri == 3)
+        if (oikeatVastauksetLaskuri >= 3)
         {
             // N‰yt‰ nappula voiton j‰lkeen
             if (seuraavaSceneNappi != null)
@@ -154,7 +162,8 @@ public class KysymysManageri : MonoBehaviour
 
             Debug.Log("Ei kaikki vastaukset oikein");
         }
-    }
+    
+}
 
     void LaitaVastaukset()
     {
@@ -169,7 +178,9 @@ public class KysymysManageri : MonoBehaviour
             }
 
             int vastausNumero = i + 1;
-            // P‰ivit‰ t‰ss‰ kutsu ValitseVastaus-metodia oikealla vastausnumerolla
+            // Poista vanhat kuuntelijat ennen uusien lis‰‰mist‰
+            vaihtoehdot[i].GetComponent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
+            // Lis‰‰ uusi kuuntelija
             vaihtoehdot[i].GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => ValitseVastaus(vastausNumero));
         }
         
@@ -183,7 +194,8 @@ public class KysymysManageri : MonoBehaviour
         nykyinenKysymys = Random.Range(0, QnA.Count);
         Debug.Log("Uusi kysymys: " + KysymysTxt.text);
         KysymysTxt.text = QnA[nykyinenKysymys].Kysymys;
-            LaitaVastaukset();
-        }
+        LaitaVastaukset();
+    }
+
     }
 
