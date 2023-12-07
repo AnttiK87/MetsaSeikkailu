@@ -2349,7 +2349,7 @@ MonoBehaviour:
   objekti3: {fileID: 1570093761}
   objekti4: {fileID: 923177533}
   nuoliSeuraavaScene: {fileID: 1923105399}
-  "Kyselij\xE4": {fileID: 687295230}
+  kyselija: {fileID: 0}
 --- !u!1 &698207433
 GameObject:
   m_ObjectHideFlags: 0
