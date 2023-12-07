@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class poisPaalta : MonoBehaviour
+public class ObjektiPois : MonoBehaviour
 {
     public GameObject objectToActivate;
     public float activationDelay = 3f; // Adjust the delay in seconds

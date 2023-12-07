@@ -123,6 +123,108 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &17178894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 17178898}
+  - component: {fileID: 17178897}
+  - component: {fileID: 17178896}
+  - component: {fileID: 17178895}
+  m_Layer: 5
+  m_Name: CanvasPunarinta2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &17178895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17178894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &17178896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17178894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &17178897
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17178894}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &17178898
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17178894}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 748021112}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &52812673
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +619,81 @@ MonoBehaviour:
   targetObject: {fileID: 687295230}
   rotationSpeed: 2
   inactivityDuration: 3
+--- !u!1 &173726798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 173726799}
+  - component: {fileID: 173726801}
+  - component: {fileID: 173726800}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &173726799
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173726798}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.1111112, y: 1.1111112, z: 1.1111112}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 748021112}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -560, y: 0}
+  m_SizeDelta: {x: 640, y: 800}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &173726800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173726798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 93cacba31153fde4eba334340d16b19c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &173726801
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173726798}
+  m_CullTransparentMesh: 1
 --- !u!1 &182856680
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,7 +778,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: Kysymykset, Assembly-CSharp
+        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
         m_MethodName: VaaraNappi
         m_Mode: 1
         m_Arguments:
@@ -2045,9 +2222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1635830955}
-  txt1: {fileID: 1196764886}
-  txt2: {fileID: 2120105311}
-  newPanel: {fileID: 1538795228}
+  newPanel: {fileID: 17178894}
 --- !u!114 &687295237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2057,16 +2232,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 687295230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b078fb41e0762a41ace10ace3e3a9d4, type: 3}
+  m_Script: {fileID: 11500000, guid: a60afa64f3f1b7749a8c97431b25b4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 1538795228}
+  panelPre: {fileID: 1635830955}
+  panel1: {fileID: 17178894}
+  panel2: {fileID: 1538795228}
   textKysymys1: {fileID: 1441843304}
   textKysymys2: {fileID: 52812673}
   textVaarin: {fileID: 2139490509}
   textOikein: {fileID: 2003180815}
-  kivi: {fileID: 1570093761}
-  nuoli: {fileID: 1923105399}
+  objekti1: {fileID: 2125482895}
+  objekti2: {fileID: 2057294904}
+  objekti3: {fileID: 1570093761}
+  objekti4: {fileID: 923177533}
+  nuoliSeuraavaScene: {fileID: 1923105399}
+  "Kyselij\xE4": {fileID: 687295230}
 --- !u!1 &698207433
 GameObject:
   m_ObjectHideFlags: 0
@@ -2363,7 +2544,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: Kysymykset, Assembly-CSharp
+        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
         m_MethodName: OikeaNappi2
         m_Mode: 1
         m_Arguments:
@@ -2411,6 +2592,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739421626}
+  m_CullTransparentMesh: 1
+--- !u!1 &748021111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 748021112}
+  - component: {fileID: 748021114}
+  - component: {fileID: 748021113}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &748021112
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748021111}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 2120105312}
+  - {fileID: 173726799}
+  m_Father: {fileID: 17178898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &748021113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748021111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7411765}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &748021114
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748021111}
   m_CullTransparentMesh: 1
 --- !u!1 &758809075
 GameObject:
@@ -2742,7 +3000,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: Kysymykset, Assembly-CSharp
+        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
         m_MethodName: VinkkiNappi
         m_Mode: 1
         m_Arguments:
@@ -2875,7 +3133,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: Kysymykset, Assembly-CSharp
+        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
         m_MethodName: OikeaNappi1
         m_Mode: 1
         m_Arguments:
@@ -3084,7 +3342,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: Kysymykset, Assembly-CSharp
+        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
         m_MethodName: VinkkiNappi
         m_Mode: 1
         m_Arguments:
@@ -3151,7 +3409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &923177534
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3235,6 +3493,7 @@ MonoBehaviour:
   panelVinkki2: {fileID: 639166696}
   panelVinkki3: {fileID: 1818856136}
   panelVinkki4: {fileID: 2019008917}
+  Kysymykset: {fileID: 1538795228}
 --- !u!65 &923177537
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3607,9 +3866,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 687295236}
-        m_TargetAssemblyTypeName: Punarinta, Assembly-CSharp
-        m_MethodName: TerminateCanvas
+      - m_Target: {fileID: 687295237}
+        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
+        m_MethodName: SeuraavaNappi
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4296,7 +4555,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: Kysymykset, Assembly-CSharp
+        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
         m_MethodName: VinkkiNappi
         m_Mode: 1
         m_Arguments:
@@ -4632,7 +4891,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: Kysymykset, Assembly-CSharp
+        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
         m_MethodName: VaaraNappi
         m_Mode: 1
         m_Arguments:
@@ -5789,7 +6048,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: Kysymykset, Assembly-CSharp
+        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
         m_MethodName: VaaraNappi
         m_Mode: 1
         m_Arguments:
@@ -6198,7 +6457,7 @@ GameObject:
   - component: {fileID: 1538795230}
   - component: {fileID: 1538795229}
   m_Layer: 5
-  m_Name: CanvasPunarinta2
+  m_Name: CanvasPunarinta3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6552,6 +6811,7 @@ MonoBehaviour:
   panelVinkki2: {fileID: 639166696}
   panelVinkki3: {fileID: 1818856136}
   panelVinkki4: {fileID: 2019008917}
+  Kysymykset: {fileID: 1538795228}
 --- !u!1 &1579012153
 GameObject:
   m_ObjectHideFlags: 0
@@ -6921,7 +7181,6 @@ RectTransform:
   m_Children:
   - {fileID: 1901670908}
   - {fileID: 1196764887}
-  - {fileID: 2120105312}
   - {fileID: 1392206229}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8521,7 +8780,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: Kysymykset, Assembly-CSharp
+        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
         m_MethodName: TerminateCanvas
         m_Mode: 1
         m_Arguments:
@@ -8672,6 +8931,7 @@ MonoBehaviour:
   panelVinkki2: {fileID: 639166696}
   panelVinkki3: {fileID: 1818856136}
   panelVinkki4: {fileID: 2019008917}
+  Kysymykset: {fileID: 1538795228}
 --- !u!65 &2057294908
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9083,7 +9343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2120105312
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9091,17 +9351,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120105311}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.1111112, y: 1.1111112, z: 1.1111112}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 952617237}
-  m_Father: {fileID: 1635830959}
+  m_Father: {fileID: 748021112}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 600, y: 50}
+  m_AnchoredPosition: {x: 560, y: 55.555557}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2120105313
@@ -9347,6 +9607,7 @@ MonoBehaviour:
   panelVinkki2: {fileID: 639166696}
   panelVinkki3: {fileID: 1818856136}
   panelVinkki4: {fileID: 2019008917}
+  Kysymykset: {fileID: 1538795228}
 --- !u!1 &2129734378
 GameObject:
   m_ObjectHideFlags: 0
@@ -9572,6 +9833,7 @@ SceneRoots:
   - {fileID: 1570093763}
   - {fileID: 923177535}
   - {fileID: 1635830959}
+  - {fileID: 17178898}
   - {fileID: 1538795232}
   - {fileID: 795935855}
   - {fileID: 639166700}

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KysymyksetSusi : MonoBehaviour
 {
+    public GameObject panelPre;
     public GameObject panel1;
     public GameObject panel2;
     public GameObject textKysymys1;
@@ -25,7 +26,7 @@ public class KysymyksetSusi : MonoBehaviour
         
         counter++;
 
-        if (panel1 != null  && counter <= 1)
+        if (panelPre == null && panel1 != null  && counter <= 1)
         {
             ActivateObject1();
         }
@@ -41,11 +42,6 @@ public class KysymyksetSusi : MonoBehaviour
         if (panel1 != null)
         {
             panel1.SetActive(true);
-            objekti1.SetActive(true);
-            objekti2.SetActive(true);
-            objekti3.SetActive(true);
-            objekti4.SetActive(true);
-            textVaarin.SetActive(false);
         }
     }
     void ActivateObject2()
@@ -53,6 +49,10 @@ public class KysymyksetSusi : MonoBehaviour
         if (!panel2.activeSelf && panel2 != null)
         {
             Aktivoi();
+            objekti1.SetActive(true);
+            objekti2.SetActive(true);
+            objekti3.SetActive(true);
+            objekti4.SetActive(true);
             panel2.SetActive(true);
             textVaarin.SetActive(false);
             textKysymys1.SetActive(true);

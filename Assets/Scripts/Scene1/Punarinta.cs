@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEngine.Video;
 
 public class Punarinta : MonoBehaviour
 {
     public GameObject panel;
-    public GameObject txt1;
-    public GameObject txt2;
     public GameObject newPanel;
     private void OnMouseUpAsButton()
     {
@@ -17,21 +16,13 @@ public class Punarinta : MonoBehaviour
 
     void ActivateObject()
     {
-        if (panel != null)
+        if (!panel.activeSelf && panel != null)
         {
             panel.SetActive(true);
         }
     }
 
     public void NextText()
-    {
-        if (txt1 != null)
-        {
-            txt1.SetActive(false);
-            txt2.SetActive(true);
-        }
-    }
-    public void TerminateCanvas()
     {
         Destroy(panel);
         newPanel.SetActive(true);
