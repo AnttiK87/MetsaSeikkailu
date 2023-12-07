@@ -4,28 +4,25 @@ using UnityEngine;
 
 public class ObjektiPois : MonoBehaviour
 {
-    public GameObject objectToActivate;
-    public float activationDelay = 3f; // Adjust the delay in seconds
-
+    //Sama kuin objekti p‰‰lle, mutt t‰ss‰ pois p‰‰lt‰ viiveell‰
+    public GameObject aktivoitavaObjekti;
+    public float aktivoinninViive = 3f;
     private void Start()
     {
-        if (objectToActivate == null)
+        if (aktivoitavaObjekti == null)
         {
             Debug.LogError("Object to activate reference is not set!");
-            enabled = false; // Disable the script if the object to activate reference is not set
+            enabled = false;
             return;
         }
 
-        // Start the coroutine for delayed activation
-        StartCoroutine(ActivateObjectWithDelay());
+        StartCoroutine(DeaktivoiObjektiViiveella());
     }
 
-    IEnumerator ActivateObjectWithDelay()
+    IEnumerator DeaktivoiObjektiViiveella()
     {
-        // Wait for the specified delay
-        yield return new WaitForSeconds(activationDelay);
+        yield return new WaitForSeconds(aktivoinninViive);
 
-        // Activate the object after the delay
-        objectToActivate.SetActive(false);
+        aktivoitavaObjekti.SetActive(false);
     }
 }

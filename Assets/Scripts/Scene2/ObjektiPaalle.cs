@@ -4,28 +4,33 @@ using UnityEngine;
 
 public class ObjektiPaalle : MonoBehaviour
 {
-    public GameObject objectToActivate;
-    public float activationDelay = 3f; // Adjust the delay in seconds
+    //Käytössä toisen kentän animointien näyttöön
+    //Aktivoidaan objekti viiveellä, että animaatio tapahtuu oikea aikaisesti
+    //ChatGPT auttoi tässä
+
+    public GameObject aktivoitavaObjekti;
+    public float aktivoinninViive = 3f;
 
     private void Start()
     {
-        if (objectToActivate == null)
+        //virheen hallintaa jos aktivoitavaa objektia ei ole määritetty
+        if (aktivoitavaObjekti == null)
         {
-            Debug.LogError("Object to activate reference is not set!");
-            enabled = false; // Disable the script if the object to activate reference is not set
-            return;
+            Debug.LogError("Aktivoitavaa objektia ei ole määritetty");
+            enabled = false; 
         }
 
-        // Start the coroutine for delayed activation
-        StartCoroutine(ActivateObjectWithDelay());
+        // Kutsutaan viivytettyä aktivointia
+        StartCoroutine(AktivoiObjektiViiveella());
     }
 
-    IEnumerator ActivateObjectWithDelay()
+    //metodi objektin aktivoinnille viiveellä
+    IEnumerator AktivoiObjektiViiveella()
     {
         // Wait for the specified delay
-        yield return new WaitForSeconds(activationDelay);
+        yield return new WaitForSeconds(aktivoinninViive);
 
         // Activate the object after the delay
-        objectToActivate.SetActive(true);
+        aktivoitavaObjekti.SetActive(true);
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+//Tämä on ryöstetty suoraan Yrjön AR/VR kurssilta
 public class VRCamera : MonoBehaviour
 { // flag to keep track whether we are dragging or not
     public  bool isDragging = false;

@@ -1,47 +1,54 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//Tämän teki ChatGPT
+
+//Tämän teki melkolailla kokonaan ChatGPT. Yritetty kuitenkin ymmärtää mitä se teki.
 public class KameraFocus : MonoBehaviour
 {
-    public GameObject targetObject;
-    public float rotationSpeed = 1f;
-    public float inactivityDuration = 5f; // Adjust the duration of inactivity before disabling
+    //Scripti jolla kamera saadaan kääntymään halutun peliobjektin suuntaan ja seuraamaan sitä
 
-    private float inactivityTimer = 0f;
+    //muuttujat
+    public GameObject targetObject; //seurattava objekti
+    public float rotationSpeed = 1f; //kameran kääntymisen nopeus
+    public float inactivityDuration = 5f; //viive, että kameraa saa kääneltyä myös pois päin seurattavasta objektista
+    //tätä yritétty myös sen perusteella kun liike pysähtyy, mutta ei saatu toimimaan
 
+    private float inactivityTimer = 0f; //laskuri viivettä varten
+
+    //virheen hallintaa jos objektia ei ole määritetty
     void Start()
     {
         if (targetObject == null)
         {
             Debug.LogError("Target object is not assigned!");
-            enabled = false; // Disable the script if the target object is not assigned
+            enabled = false;
             return;
         }
 
     }
 
+    //Seurataan objektia ja triggeröinti sillä kun objekti tulee aktiiviseksi
     void Update()
     {
-        // Check if the target object is active
+        // Tarkastus onko objekti aktiivinen
         if (targetObject != null && targetObject.activeSelf)
         {
-            // Calculate the direction from the camera to the target object
+            // Lasketaan kameran ja objektin välinen etäisyys
             Vector3 directionToTarget = targetObject.transform.position - transform.position;
 
-            // Calculate the rotation to look at the target object
+            // Lasketaan mihin pitää kameraa kääntää että nähdään objekti
             Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
 
-            // Smoothly interpolate the camera's rotation towards the target rotation
+            // Interpolointi, että kamera seuraa objektia sulavasti
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
 
-            // Target object is not active, start the inactivity timer
+            // Käynnistetään laskuri kameran vapautusta varten
             inactivityTimer += Time.deltaTime;
 
-            // Check if the inactivity duration has passed
+            // Onko viive saavutettu
             if (inactivityTimer >= inactivityDuration)
             {
-                // If the duration has passed, disable the script
+                // otetaan kameran seuranta pois kytkemällä scripti pois käytöstä
                 enabled = false;
             }
         }

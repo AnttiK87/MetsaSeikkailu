@@ -5,17 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class SeuraavaScene : MonoBehaviour
 {
+    //Objekti johon scripti on liitetty toimimaan nappina
     private void OnMouseUpAsButton()
     {
-        LoadNextScene();
+        LataaSeuraavaScene();
     }
 
-    public void LoadNextScene()
+    //Ladataan seuraava kentt‰
+    public void LataaSeuraavaScene()
     {
-        // Get the index of the current active scene
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        // Haetaan nykyisen kent‰n numero
+        int nykyisenScenenIndeksi = SceneManager.GetActiveScene().buildIndex;
 
-        // Load the next scene in order
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        // Nis‰t‰‰n nykyiseen yksi eli ladataan seuraava kentt‰
+        SceneManager.LoadScene(nykyisenScenenIndeksi + 1);
     }
 }
