@@ -6,6 +6,9 @@ using UnityEngine.Video;
 
 public class VideoPlay : MonoBehaviour
 {
+    //Luokka tai scripti alussa olevien videoiden näyttämiselle
+
+    //muuttujat
     public VideoPlayer videoPlayer1;
     public VideoPlayer videoPlayer2;
     public GameObject panel;
@@ -14,14 +17,16 @@ public class VideoPlay : MonoBehaviour
     public GameObject rawImageVideo1;
     public GameObject rawImageVideo2;
     public GameObject telkka;
+
+    //Scripti liitetty telkänpönttöön ja tällä pontto saadaan toimimaan nappina.
+    //Vaatii toimiakseen objektille boxcollider komponentin.
     private void OnMouseUpAsButton()
     {
         //Debug.Log("nappia painettu");
         ActivateObject();
     }
 
-
-    // Start is called before the first frame update
+    //Avataan ui paneeli jossa video näytetään ja valmistellaan video
     void ActivateObject()
     {
         if (panel != null)
@@ -31,12 +36,14 @@ public class VideoPlay : MonoBehaviour
         }
     }
 
+    //Liitetään uissa olevaan nappiin ja tällä video lähtee käyntiin
     public void PlayVideo1()
     {
         videoPlayer1.Play();
-        videoPlayer1.loopPointReached += VideoPlaybackComplete;
+        videoPlayer1.loopPointReached += VideoPlaybackComplete; //katsotaan milloin video on näytetty loppuun ja kutsutaan metodia
     }
 
+    //Liitetään uissa olevaan nappiin ja tällä seuraava video lähtee käyntiin
     public void PlayVideo2()
     {
         rawImageVideo1.SetActive(false);
@@ -44,6 +51,8 @@ public class VideoPlay : MonoBehaviour
         videoPlayer2.Play();
         videoPlayer2.loopPointReached += VideoPlaybackComplete2;
     }
+
+    //metodi videon joka kutsutaan kun ensimmäinen video on lopussa
     void VideoPlaybackComplete(VideoPlayer vp)
     {
         button1.SetActive(false);
@@ -51,10 +60,11 @@ public class VideoPlay : MonoBehaviour
         videoPlayer2.Prepare();
     }
 
+    //metodi videon joka kutsutaan kun toinen video on lopussa
     void VideoPlaybackComplete2(VideoPlayer vp2)
     {
-        panel.SetActive(false);
-        telkka.SetActive(true);
-        Destroy(panel);
+        panel.SetActive(false); //ui canvas kiinni
+        telkka.SetActive(true); //peli hahmo näyttämölle
+        Destroy(panel); //ui paneeli joutaa pois
     }
 }

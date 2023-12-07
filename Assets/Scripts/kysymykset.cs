@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Sama kuin kysymykset mutta käytössä kahdessa ekassa scenessä,
-//kun en jaksanut vaihtaa niihin uudelleen nimettyä scriptiä
-public class KysymyksetSusi : MonoBehaviour
+public class kysymykset : MonoBehaviour
 {
+    //Luokka kysymysten näyttämistä varten
+
+    //muuttujat
     public GameObject panelPre;
     public GameObject panel1;
     public GameObject panel2;
@@ -18,27 +19,31 @@ public class KysymyksetSusi : MonoBehaviour
     public GameObject objekti3;
     public GameObject objekti4;
     public GameObject nuoliSeuraavaScene;
-    public GameObject kyselija;
+    public GameObject Kyselija;
 
+    //laskuri, että ensimmäinen ui ruutu näytetään vain ensimmäisellä kertaa
     private int counter = 0;
 
-
+    //Objekti johon scripti on liitetty toimimaan nappina
     private void OnMouseUpAsButton()
     {
-        
+        //lisätään laskuria
         counter++;
 
-        if (panelPre == null && panel1 != null  && counter <= 1)
+        //jos ekakerta niin näytetään scenen aloitus teksti
+        if (panelPre == null && panel1 != null && counter <= 1)
         {
             ActivateObject1();
         }
-        
+
+        //jos aloitusteksti on jo nähty näytetään suoraan kysymykset
         else if (panel1 == null && panel2 != null)
         {
             ActivateObject2();
         }
     }
 
+    //metodi aloitustekstin näytölle
     void ActivateObject1()
     {
         if (panel1 != null)
@@ -46,27 +51,38 @@ public class KysymyksetSusi : MonoBehaviour
             panel1.SetActive(true);
         }
     }
+
+    //metodi kysymysten näytölle
     void ActivateObject2()
     {
         if (!panel2.activeSelf && panel2 != null)
         {
-            Aktivoi();
+            Aktivoi(); //aktivoidaan vikki scripti
+
+            //Varmistetaan, että vinkkejä antavat objektit ovat aktiivisina
             objekti1.SetActive(true);
             objekti2.SetActive(true);
             objekti3.SetActive(true);
             objekti4.SetActive(true);
+               
+            //näytetään canvas jossa kysymykset ovat
             panel2.SetActive(true);
-            textVaarin.SetActive(false);
+            textVaarin.SetActive(false); //jos vastattu väärin aikaisemmin niin suljetaan värän vastauksen teksti
+            
+            //näytetään ensimmäinen kysymys
             textKysymys1.SetActive(true);
             textKysymys2.SetActive(false);
         }
     }
 
+    //tämä metodi liitetään ekan ui näytön seuraava nappiin
     public void SeuraavaNappi()
     {
         Destroy(panel1);
         ActivateObject2();
     }
+
+    //tämä metodi liitetään ekan ui näytön vinkki nappeihin
     public void VinkkiNappi()
     {
         panel2.SetActive(false);
@@ -74,6 +90,7 @@ public class KysymyksetSusi : MonoBehaviour
         textKysymys2.SetActive(false);
     }
 
+    ////tämä metodi liitetään ekan ui näytön väärä vastaus nappeihin
     public void VaaraNappi()
     {
         textKysymys1.SetActive(false);
@@ -81,39 +98,41 @@ public class KysymyksetSusi : MonoBehaviour
         textVaarin.SetActive(true);
     }
 
+    //tämä metodi liitetään ekan ui näytön ensimmäisen kysymyksen oikea vastaus nappiin
     public void OikeaNappi1()
     {
         textKysymys1.SetActive(false);
         textKysymys2.SetActive(true);
     }
 
+    //tämä metodi liitetään ekan ui näytön toisen kysymyksen oikea vastaus nappiin
     public void OikeaNappi2()
     {
         textKysymys2.SetActive(false);
         textOikein.SetActive(true);
     }
 
+    //tämä metodi liitetään ekan ui loppu näytön eteenpäin nappiin
     public void TerminateCanvas()
     {
-        Deaktivoi();
- 
-        Destroy(panel2);
-        
+        Deaktivoi(); //vinkki objektit deaktivoidaan
+
+        Destroy(panel2); //kysymys paneelit tuhotaan
+
+        //Avataan nuoli jolla pääsee seuraavaan sceneen
         nuoliSeuraavaScene.SetActive(true);
-        if (kyselija != null)
-        {
-            kyselija.SetActive(false);
-        }
+        Kyselija.SetActive(false); //kyselijä poistuu näyttämöltä tarvittaessa
     }
 
+    //Kutsutaan vinkki luokkan metodia ja aktivoidaan vinkkien näyttö
     void Aktivoi()
     {
         Vinkki.VinkkiInstanssi.AktivoiScript();
     }
 
+    //Kutsutaan vinkki luokkan metodia ja deaktivoidaan vinkkien näyttö
     void Deaktivoi()
     {
         Vinkki.VinkkiInstanssi.DeaktivoiScript();
     }
 }
-

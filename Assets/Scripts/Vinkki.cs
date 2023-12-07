@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Vinkki : MonoBehaviour
 {
+    //Luokka vinkkien n‰ytt‰mist‰ varten
+
+    //muuttujat
     public GameObject panelVinkki1;
     public GameObject panelVinkki2;
     public GameObject panelVinkki3;
@@ -12,6 +15,7 @@ public class Vinkki : MonoBehaviour
     private string klikattu;
     private bool isEnabled = false;
 
+    //Aktivoidana vinkki luokka, ett‰ sit‰ voidaan kutsua kysymykset luokasta
     public static Vinkki VinkkiInstanssi;
     private void Awake()
     {
@@ -21,26 +25,30 @@ public class Vinkki : MonoBehaviour
         }
     }
 
+    //Kuunnellaan klikataanko jotain vinkki objekteista
     private void Update()
     {
-        // Check for mouse click
-
+        
+            //hiit‰ on klikattu
             if (Input.GetMouseButtonDown(0))
             {
-                // Raycast to determine what object was clicked
+                // M‰‰ritet‰‰n klikattiinko objektia ja mik‰ se oli
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
 
+                //Jos osui objektiin
                 if (Physics.Raycast(ray, out hit))
                 {
-                    // Check if the clicked object has a name
+                    // Haetaan objektille oleva tagi 
                     if (hit.collider.gameObject.tag != null)
                     {
-                        // Get the name of the clicked object
+                        //tallennetaan tagi muuttujaan
                         klikattu = hit.collider.gameObject.tag;
 
-                        // Now you can use the 'clickedObjectName' variable as needed
-                        Debug.Log("Clicked object name: " + klikattu);
+                        //Debug.Log("Klikatun objektin tagi: " + klikattu);
+
+                        //kutsutaan metodia jolla n‰ytet‰‰n vinkki ja vied‰‰n metodiin
+                        //klikatub tagin nimi, ett‰ osataan avata haluttu vinkki
                         if (isEnabled)
                         {
                             ActivateVinkki(klikattu);
@@ -51,11 +59,15 @@ public class Vinkki : MonoBehaviour
        
     }
 
-
+    //metodi vinkin n‰ytt‰mist‰ varten
     void ActivateVinkki(string klikattuObjekti)
     {
+        //katsotaan onko kysymys ruutu auki jos on niin ei avata vinkki‰ p‰‰lle
         if (!Kysymykset.activeSelf && Kysymykset != null)
         {
+            //tarkastetaan mij‰ vinkki n‰ytet‰‰n.
+            //ps. Vaatii paljon drag droppia unityn puolella.
+            //liitett‰v‰ kaikkiin vinkki objekteihin ja kaikkiin on anettava kaikki vinkki ui canvasit
              if (klikattuObjekti.Equals("Vinkki1"))
             {
                 panelVinkki1.SetActive(true);
@@ -75,6 +87,7 @@ public class Vinkki : MonoBehaviour
         }
     }
 
+    //Suljetaan vinkki. t‰m‰ liitet‰‰n sulje nappeihin unityss‰
     public void suljeVinkki1()
     {
         panelVinkki1.SetActive(false);
@@ -83,6 +96,7 @@ public class Vinkki : MonoBehaviour
         panelVinkki4.SetActive(false);
     }
 
+    //Aktivoidaan scripti. T‰t‰ kutsutaan kysymyksiss‰
     public void AktivoiScript()
     {
         
@@ -91,6 +105,7 @@ public class Vinkki : MonoBehaviour
         
     }
 
+    //Deaktivoidaan scripti. T‰t‰ kutsutaan kysymyksiss‰
     public void DeaktivoiScript()
     {
         

@@ -168,8 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da7b52dc241efe4c9504a1a5d7e8674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 1069726081}
-  activationDelay: 8
+  aktivoitavaObjekti: {fileID: 1069726081}
+  aktivoinninViive: 8
 --- !u!114 &17817854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,8 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 148420d6a7ab0ed4fa3b4a32df8d526b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 1233065522}
-  activationDelay: 8
+  aktivoitavaObjekti: {fileID: 1233065522}
+  aktivoinninViive: 8
 --- !u!1 &21632421
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +392,7 @@ MonoBehaviour:
   objekti3: {fileID: 1990322194}
   objekti4: {fileID: 2059546428}
   nuoliSeuraavaScene: {fileID: 1648875156}
-  "Kyselij\xE4": {fileID: 26147487}
+  Kyselija: {fileID: 26147487}
 --- !u!65 &26147492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6784,8 +6784,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 148420d6a7ab0ed4fa3b4a32df8d526b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 26147487}
-  activationDelay: 6.5
+  aktivoitavaObjekti: {fileID: 26147487}
+  aktivoinninViive: 6.5
 --- !u!1 &1788861917
 GameObject:
   m_ObjectHideFlags: 0
