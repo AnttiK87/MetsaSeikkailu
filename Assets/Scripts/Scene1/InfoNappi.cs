@@ -12,8 +12,6 @@ public class InfoNappi : MonoBehaviour
     void Awake() // ei tuhoa tätä scriptiä tai info objekteja kun vaihdetaan sceneä
     {
         DontDestroyOnLoad(gameObject);
-        DontDestroyOnLoad(infoNappi);
-        DontDestroyOnLoad(infoPanel);
         DontDestroyOnLoad(infoNappiCanvas);
 
     }
@@ -21,8 +19,7 @@ public class InfoNappi : MonoBehaviour
     {
         if (scene.buildIndex == 7) // tarkistetaan onko loaded scene 7 jolloin tuhotaan info objektit ja tämä scripti
         {
-            Destroy(infoNappi);
-            Destroy(infoPanel);
+
             Destroy(infoNappiCanvas);
             Destroy(gameObject); // viimeisenä tuhotaan tämä scripti
 
