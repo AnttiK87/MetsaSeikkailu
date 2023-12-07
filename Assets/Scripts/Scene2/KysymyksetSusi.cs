@@ -18,7 +18,7 @@ public class KysymyksetSusi : MonoBehaviour
     public GameObject objekti3;
     public GameObject objekti4;
     public GameObject nuoliSeuraavaScene;
-    public GameObject Kyselija;
+    public GameObject kyselija;
 
     private int counter = 0;
 
@@ -100,7 +100,10 @@ public class KysymyksetSusi : MonoBehaviour
         Destroy(panel2);
         
         nuoliSeuraavaScene.SetActive(true);
-        Kyselija.SetActive(false);
+        if (kyselija != null)
+        {
+            kyselija.SetActive(false);
+        }
     }
 
     void Aktivoi()

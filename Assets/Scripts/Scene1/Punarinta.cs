@@ -35,5 +35,6 @@ public class Punarinta : MonoBehaviour
     {
         Destroy(panel);
         newPanel.SetActive(true);
+        Destroy(GetComponent("Punarinta"));
     }
 }
