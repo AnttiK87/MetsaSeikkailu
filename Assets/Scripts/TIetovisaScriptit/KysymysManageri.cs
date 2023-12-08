@@ -13,6 +13,7 @@ public class KysymysManageri : MonoBehaviour
     public int nykyinenKysymys;
     public GameObject TietoVisaCanvas;
     public GameObject seuraavaSceneNappi;
+    public GameObject seuraavaSceneNappi2;
     public GameObject Vaarintxt;
     private int oikeatVastauksetLaskuri = 0;
     private int valittuVastaus;
@@ -35,6 +36,7 @@ public class KysymysManageri : MonoBehaviour
         // Piilotetaan seuraavaSceneNappi alussa
 
         seuraavaSceneNappi.SetActive(false);
+        
 
         Vaarintxt.SetActive(false);
 
@@ -55,9 +57,10 @@ public class KysymysManageri : MonoBehaviour
             if (KaikkiVastauksetOikein())
             {
                 // Näytä seuraavaSceneNappi, koska kaikki vastaukset ovat oikein
-                if (seuraavaSceneNappi != null)
+                if (seuraavaSceneNappi != null || seuraavaSceneNappi2 != null)
                 {
                     seuraavaSceneNappi.SetActive(true);
+                    seuraavaSceneNappi2.SetActive(true);
                 }
             }
             else
@@ -151,17 +154,19 @@ public class KysymysManageri : MonoBehaviour
         if (oikeatVastauksetLaskuri >= 3)
         {
             // Näytä nappula voiton jälkeen
-            if (seuraavaSceneNappi != null)
+            if (seuraavaSceneNappi != null || seuraavaSceneNappi2 != null)
             {
                 seuraavaSceneNappi.SetActive(true);
+                seuraavaSceneNappi2.SetActive(true);
             }
         }
         else
         {
             // Piilota nappi, jos vastauksia ei ole vielä tarpeeksi
-            if (seuraavaSceneNappi != null)
+            if (seuraavaSceneNappi != null || seuraavaSceneNappi2 != null)
             {
                 seuraavaSceneNappi.SetActive(false);
+                seuraavaSceneNappi2.SetActive(false);
             }
 
             Debug.Log("Ei kaikki vastaukset oikein");
