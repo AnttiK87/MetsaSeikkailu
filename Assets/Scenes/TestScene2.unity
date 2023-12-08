@@ -5420,7 +5420,7 @@ GameObject:
   - component: {fileID: 1282370358}
   m_Layer: 5
   m_Name: CanvasVinkkiSusi
-  m_TagString: Untagged
+  m_TagString: Vinkki
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5658,7 +5658,7 @@ GameObject:
   - component: {fileID: 1310688065}
   m_Layer: 5
   m_Name: CanvasVinkkiKanto
-  m_TagString: Untagged
+  m_TagString: Vinkki
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6030,7 +6030,7 @@ GameObject:
   - component: {fileID: 1528617438}
   m_Layer: 5
   m_Name: CanvasVinkkiMustarastas2
-  m_TagString: Untagged
+  m_TagString: Vinkki
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6540,7 +6540,7 @@ GameObject:
   - component: {fileID: 1715835458}
   m_Layer: 5
   m_Name: CanvasVinkkiMustarastas
-  m_TagString: Untagged
+  m_TagString: Vinkki
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

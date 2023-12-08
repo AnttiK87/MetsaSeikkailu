@@ -55,7 +55,7 @@ public class kysymykset : MonoBehaviour
     //metodi kysymysten näytölle
     void ActivateObject2()
     {
-        if (!panel2.activeSelf && panel2 != null)
+        if (!panel2.activeSelf && panel2 != null && !GameObject.FindWithTag("Vinkki"))
         {
             Aktivoi(); //aktivoidaan vikki scripti
 

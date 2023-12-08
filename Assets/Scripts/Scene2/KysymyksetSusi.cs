@@ -48,7 +48,7 @@ public class KysymyksetSusi : MonoBehaviour
     }
     void ActivateObject2()
     {
-        if (!panel2.activeSelf && panel2 != null)
+        if (!panel2.activeSelf && panel2 != null && !GameObject.FindWithTag("Vinkki"))
         {
             Aktivoi();
             objekti1.SetActive(true);

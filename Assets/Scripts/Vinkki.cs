@@ -63,7 +63,8 @@ public class Vinkki : MonoBehaviour
     void ActivateVinkki(string klikattuObjekti)
     {
         //katsotaan onko kysymys ruutu auki jos on niin ei avata vinkki‰ p‰‰lle
-        if (!Kysymykset.activeSelf && Kysymykset != null)
+            //ps. Vaatii paljon drag droppia unityn puolella.
+        if (!Kysymykset.activeSelf && Kysymykset != null && !panelVinkki1.activeSelf && !panelVinkki2.activeSelf && !panelVinkki3.activeSelf && !panelVinkki4.activeSelf)
         {
             //tarkastetaan mij‰ vinkki n‰ytet‰‰n.
             //ps. Vaatii paljon drag droppia unityn puolella.

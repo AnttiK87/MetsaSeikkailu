@@ -5,10 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class SeuraavaScene : MonoBehaviour
 {
+    public GameObject objektiPois;
+    public GameObject objektiPaalle;
     //Objekti johon scripti on liitetty toimimaan nappina
     private void OnMouseUpAsButton()
     {
-        LataaSeuraavaScene();
+        objektiPois.SetActive(false);
+        objektiPaalle.SetActive(true);
+
+        if (objektiPois == null && objektiPaalle == null )
+        {
+            LataaSeuraavaScene();
+        }
     }
 
     //Ladataan seuraava kenttä
