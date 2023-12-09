@@ -7,13 +7,18 @@ public class SeuraavaScene : MonoBehaviour
 {
     public GameObject objektiPois;
     public GameObject objektiPaalle;
+    public Animator Haivytys;
+
+    public float Haivytysaika = 1f;
     //Objekti johon scripti on liitetty toimimaan nappina
     private void OnMouseUpAsButton()
     {
-        objektiPois.SetActive(false);
-        objektiPaalle.SetActive(true);
-
-        if (objektiPois == null && objektiPaalle == null )
+        if (objektiPois != null && objektiPaalle != null)
+        {
+            objektiPois.SetActive(false);
+            objektiPaalle.SetActive(true);
+        }
+        else
         {
             LataaSeuraavaScene();
         }
@@ -22,10 +27,17 @@ public class SeuraavaScene : MonoBehaviour
     //Ladataan seuraava kentt‰
     public void LataaSeuraavaScene()
     {
-        // Haetaan nykyisen kent‰n numero
-        int nykyisenScenenIndeksi = SceneManager.GetActiveScene().buildIndex;
+        // Lis‰t‰‰n nykyiseen yksi eli ladataan seuraava kentt‰
+        StartCoroutine(HaivytysKutsu(SceneManager.GetActiveScene().buildIndex + 1));
+    }
 
-        // Nis‰t‰‰n nykyiseen yksi eli ladataan seuraava kentt‰
-        SceneManager.LoadScene(nykyisenScenenIndeksi + 1);
+    IEnumerator HaivytysKutsu(int levelIndex)
+    {
+        Haivytys.SetTrigger("Alku");
+
+        yield return new WaitForSeconds(Haivytysaika);
+
+        // Haetaan nykyisen kent‰n numero
+        SceneManager.LoadScene(levelIndex);
     }
 }
