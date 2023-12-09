@@ -6,6 +6,7 @@ public class AvaaJaSulje : MonoBehaviour
 {
 
     public GameObject VinkkiCanvas;
+    public AudioSource vinkkiAani;
 
     public void Start()
     {
@@ -20,6 +21,7 @@ public class AvaaJaSulje : MonoBehaviour
     {
         //Debug.Log("nappia painettu");
         ActivateVinkki1();
+        vinkkiAani.Play();
     }
 
     void ActivateVinkki1()
