@@ -421,6 +421,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 449771415}
   vinkkiAani: {fileID: 1726801477}
+  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &110320322
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,6 +2390,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 1970519184}
   vinkkiAani: {fileID: 1726801477}
+  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &663745128
 GameObject:
   m_ObjectHideFlags: 0
@@ -2584,6 +2590,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 122307089}
   vinkkiAani: {fileID: 1726801477}
+  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &787009416
 GameObject:
   m_ObjectHideFlags: 0
@@ -4994,6 +5003,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 1055022200}
   vinkkiAani: {fileID: 1726801477}
+  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1497307276
 GameObject:
   m_ObjectHideFlags: 0

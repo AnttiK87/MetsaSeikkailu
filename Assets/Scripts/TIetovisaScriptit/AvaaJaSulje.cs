@@ -7,6 +7,10 @@ public class AvaaJaSulje : MonoBehaviour
 
     public GameObject VinkkiCanvas;
     public AudioSource vinkkiAani;
+    public Texture2D cursorTexture;
+    public CursorMode cursorMode = CursorMode.Auto;
+    public Vector2 hotSpot = Vector2.zero;
+
 
     public void Start()
     {
@@ -15,8 +19,17 @@ public class AvaaJaSulje : MonoBehaviour
             VinkkiCanvas.SetActive(false);
         }
     }
-    
 
+    void OnMouseEnter()
+    {
+        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+    }
+
+    void OnMouseExit()
+    {
+        // Pass 'null' to the texture parameter to use the default system cursor.
+        Cursor.SetCursor(null, Vector2.zero, cursorMode);
+    }
     private void OnMouseUpAsButton()
     {
         //Debug.Log("nappia painettu");

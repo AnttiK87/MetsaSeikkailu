@@ -2024,6 +2024,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 29353580}
   vinkkiAani: {fileID: 1644365918}
+  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!65 &748953647
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2654,6 +2657,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 250810874}
   vinkkiAani: {fileID: 1644365918}
+  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!65 &1107116762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5418,6 +5424,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 362784858}
   vinkkiAani: {fileID: 1644365918}
+  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!65 &1879296243
 BoxCollider:
   m_ObjectHideFlags: 0
