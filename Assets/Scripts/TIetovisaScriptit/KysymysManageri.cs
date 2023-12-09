@@ -18,6 +18,8 @@ public class KysymysManageri : MonoBehaviour
     private int oikeatVastauksetLaskuri = 0;
     private int valittuVastaus;
     public Canvas SuljeAloitusTervehdys;
+    public AudioSource oikeinAani;
+    public AudioSource vaarinAani;
 
     public Text KysymysTxt;
 
@@ -125,18 +127,23 @@ public class KysymysManageri : MonoBehaviour
                 // P√§ivit√§ nykyinenKysymys uudelleen
                 nykyinenKysymys = Random.Range(0, QnA.Count);
                 LuoKysymys();
+                // Soita "oikea" ‰‰ni
+                oikeinAani.Play();
             }
             else
             {
                 Vaarintxt.SetActive(false);
                 // Kaikki kysymykset on vastattu, tarkista voitto
                 TarkistaVoitto();
+                oikeinAani.Play();
             }
     }
         else
         {
             // V‰‰r‰ vastaus
             Vaarintxt.SetActive(true);
+            // Soita "v‰‰r‰" ‰‰ni
+            vaarinAani.Play();
         }
         // Varmista, ett‰ Vaarintxt on poissa p‰‰lt‰, vaikka virheilmoituksessa olisi ongelma
         StartCoroutine(SuljeVaarintxt());
