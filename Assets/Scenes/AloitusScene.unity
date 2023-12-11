@@ -182,8 +182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Aloita Peli
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0839eadd75c7bfb41abef837aa0b635a, type: 2}
+  m_sharedMaterial: {fileID: 1580275176418572548, guid: 0839eadd75c7bfb41abef837aa0b635a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -912,7 +912,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.816, y: -98}
+  m_AnchoredPosition: {x: -11.816, y: -73}
   m_SizeDelta: {x: 460.02, y: 241.4531}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137926104
@@ -942,8 +942,8 @@ MonoBehaviour:
     sen asukkaista. \r\n\r\nOletko valmis sukeltamaan syv\xE4lle mets\xE4n syd\xE4meen
     ja paljastamaan sen salat?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0839eadd75c7bfb41abef837aa0b635a, type: 2}
+  m_sharedMaterial: {fileID: 1580275176418572548, guid: 0839eadd75c7bfb41abef837aa0b635a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -967,8 +967,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -977,9 +977,9 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: -7
   m_wordSpacing: 0
-  m_lineSpacing: -6
+  m_lineSpacing: -10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
