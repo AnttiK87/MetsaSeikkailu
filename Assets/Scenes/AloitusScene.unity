@@ -182,8 +182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Aloita Peli
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0839eadd75c7bfb41abef837aa0b635a, type: 2}
-  m_sharedMaterial: {fileID: 1580275176418572548, guid: 0839eadd75c7bfb41abef837aa0b635a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
+  m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -905,14 +905,14 @@ RectTransform:
   m_GameObject: {fileID: 1137926102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2081373, y: 2.2081373, z: 2.2081373}
+  m_LocalScale: {x: 2.0061917, y: 2.0061917, z: 2.0061917}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 437008797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.816, y: -73}
+  m_AnchoredPosition: {x: -11.816, y: -73.228}
   m_SizeDelta: {x: 460.02, y: 241.4531}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137926104
@@ -942,8 +942,8 @@ MonoBehaviour:
     sen asukkaista. \r\n\r\nOletko valmis sukeltamaan syv\xE4lle mets\xE4n syd\xE4meen
     ja paljastamaan sen salat?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0839eadd75c7bfb41abef837aa0b635a, type: 2}
-  m_sharedMaterial: {fileID: 1580275176418572548, guid: 0839eadd75c7bfb41abef837aa0b635a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: eacb69035551ddb47b94ee660b2be8a4, type: 2}
+  m_sharedMaterial: {fileID: -5452154680493031915, guid: eacb69035551ddb47b94ee660b2be8a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -967,8 +967,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1394,7 +1394,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -22, y: -432}
-  m_SizeDelta: {x: 340, y: 90}
+  m_SizeDelta: {x: 340, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1606605583
 MonoBehaviour:
@@ -1418,8 +1418,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.8962264, g: 0.88354397, b: 0.88354397, a: 1}
+    m_PressedColor: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1

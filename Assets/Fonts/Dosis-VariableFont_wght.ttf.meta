@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 22707547ebf61b045bd47b7c0f78a34e
+guid: 5f2effbefe3d3f24394b7b340252607a
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Poppins
+  - Dosis
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
