@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class PelinKestoScripti : MonoBehaviour // scripti joka laskee pelin keston
@@ -27,6 +28,13 @@ public class PelinKestoScripti : MonoBehaviour // scripti joka laskee pelin kest
         kulunutAika = Time.time - aloitusaika; // kulunut aika on aika jolloin peli lopetetaan - aloitusaika
         ajastinKaynnissa = false; // ajastin ei ole k‰ynniss‰
         Debug.Log("Timer stopped at: " + Time.time); // debuggausta varten
+    }
+    public void NollaaAjastin()
+    {
+        kulunutAika = 0; // kulunut aika on 0
+        aloitusaika = Time.time; // aloitusaika on nykyinen aika
+        ajastinKaynnissa = false; // ajastin ei ole k‰ynniss‰
+        Debug.Log("Timer reset at: " + Time.time); // debuggausta varten
     }
 
     void Update() // p‰ivitt‰‰ kuluneen ajan
@@ -56,6 +64,24 @@ public class PelinKestoScripti : MonoBehaviour // scripti joka laskee pelin kest
             PlayerPrefs.Save(); // varmistetaan, ett‰ tieto tallennetaan v‰littˆm‰sti
         }
     }
+
+    public void VaaraVastausNappiaPainaessa(Button painettuNappi) // jos painetaan v‰‰r‰‰ vastausnappia, lis‰t‰‰n aikaa 5 sek timeriin
+    {
+        if (painettuNappi.CompareTag("VaaraVastaus"))
+        {
+            LisaaAikaa();
+        }
+    }
+
+    public void LisaaAikaa() // lis‰‰ aikaa
+    {
+        if (ajastinKaynnissa)
+        {
+            aloitusaika -= 5; // v‰hennet‰‰n 5 sekunttia aloitusajasta
+            Debug.Log("5 sekunttia lis‰tty timeriin"); // debuggausta varten
+        }
+    }
+
 
 }
 

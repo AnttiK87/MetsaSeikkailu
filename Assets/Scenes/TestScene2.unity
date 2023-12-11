@@ -1674,7 +1674,7 @@ GameObject:
   - component: {fileID: 229578454}
   m_Layer: 5
   m_Name: ButtonVastaus2
-  m_TagString: Untagged
+  m_TagString: VaaraVastaus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4444,7 +4444,7 @@ GameObject:
   - component: {fileID: 995264847}
   m_Layer: 5
   m_Name: ButtonVastaus1
-  m_TagString: Untagged
+  m_TagString: VaaraVastaus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5731,7 +5731,7 @@ GameObject:
   - component: {fileID: 1301520114}
   m_Layer: 5
   m_Name: ButtonVastaus1
-  m_TagString: Untagged
+  m_TagString: VaaraVastaus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

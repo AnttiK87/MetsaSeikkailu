@@ -32,7 +32,7 @@ public class InfoNappi : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded; 
     }
 
-    //kun painetaan info nappia niin info paneli tulee näkyviin ja kun painetaan uudestaan se menee pois näkyvistä
+    //kun painetaan info nappia niin info paneeli tulee näkyviin ja kun painetaan uudestaan se menee pois näkyvistä
     public void InfoNappiPainettu()
     {
         if (!infoPanel.activeSelf && infoPanel != null) // jos info panel ei ole aktiivinen ja se ei ole null
