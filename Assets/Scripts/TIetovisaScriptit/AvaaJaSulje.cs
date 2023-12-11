@@ -6,6 +6,9 @@ public class AvaaJaSulje : MonoBehaviour
 {
 
     public GameObject VinkkiCanvas;
+    public GameObject panelVinkki1;
+    public GameObject panelVinkki2;
+    public GameObject panelVinkki3;
     public AudioSource vinkkiAani;
     public Texture2D cursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
@@ -39,7 +42,7 @@ public class AvaaJaSulje : MonoBehaviour
 
     void ActivateVinkki1()
     {
-        if (VinkkiCanvas != null)
+        if (VinkkiCanvas != null && !panelVinkki1.activeSelf && !panelVinkki2.activeSelf && !panelVinkki3.activeSelf)
         {
             VinkkiCanvas.SetActive(true);
         }

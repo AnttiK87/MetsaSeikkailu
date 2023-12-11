@@ -20,6 +20,8 @@ public class KysymysManageri : MonoBehaviour
     public Canvas SuljeAloitusTervehdys;
     public AudioSource oikeinAani;
     public AudioSource vaarinAani;
+    public GameObject nuoliSeuraavaScene;
+    public GameObject kysymysPaneeli;
 
     public Text KysymysTxt;
 
@@ -96,7 +98,11 @@ public class KysymysManageri : MonoBehaviour
     }
     public void SiirrySeuraavaanSceneen()
     {
-        SceneManager.LoadScene("TestScene5");
+        TietoVisaCanvas.SetActive(false);
+        //Destroy(TietoVisaCanvas); //kysymys paneelit tuhotaan
+
+        //Avataan nuoli jolla p‰‰see seuraavaan sceneen
+        nuoliSeuraavaScene.SetActive(true);
     }
     public void Siirry6Sceneen()
     {
@@ -165,6 +171,7 @@ public class KysymysManageri : MonoBehaviour
             {
                 seuraavaSceneNappi.SetActive(true);
                 seuraavaSceneNappi2.SetActive(true);
+                kysymysPaneeli.SetActive(false);
             }
         }
         else
