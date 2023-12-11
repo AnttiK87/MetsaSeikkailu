@@ -104,10 +104,7 @@ public class KysymysManageri : MonoBehaviour
         //Avataan nuoli jolla p‰‰see seuraavaan sceneen
         nuoliSeuraavaScene.SetActive(true);
     }
-    public void Siirry6Sceneen()
-    {
-        SceneManager.LoadScene("TestScene6");
-    }
+
     public void ValitseVastaus(int vastausNumero)
     {
 

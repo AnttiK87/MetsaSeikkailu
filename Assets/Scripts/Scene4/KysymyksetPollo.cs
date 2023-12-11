@@ -12,9 +12,11 @@ public class KysymyksetPollo : MonoBehaviour
     public GameObject objekti1;
     public GameObject objekti2;
     public GameObject objekti3;
+    public GameObject objekti4;
     public GameObject vinkki1;
     public GameObject vinkki2;
     public GameObject vinkki3;
+    public GameObject vinkki4;
     public GameObject kyselija;
     public KysymysManageri kysymysManageri;
 
@@ -37,12 +39,28 @@ public class KysymyksetPollo : MonoBehaviour
         //jos aloitusteksti on jo n‰hty n‰ytet‰‰n suoraan kysymykset
         else if (panel1 == null && kysymysManageri != null)
         {
-            if (!vinkki1.activeSelf && !vinkki2.activeSelf && !vinkki3.activeSelf)
+            if (vinkki4 == null)
             {
-                objekti1.SetActive(false);
-                objekti2.SetActive(false);
-                objekti3.SetActive(false);
-                kysymysManageri.AktivoiTietoVisaCanvas();
+                if (!vinkki1.activeSelf && !vinkki2.activeSelf && !vinkki3.activeSelf)
+                {
+                    objekti1.SetActive(false);
+                    objekti2.SetActive(false);
+                    objekti3.SetActive(false);
+
+                    kysymysManageri.AktivoiTietoVisaCanvas();
+                } 
+            }
+            else
+            {
+                if (!vinkki1.activeSelf && !vinkki2.activeSelf && !vinkki3.activeSelf)
+                {
+                    objekti1.SetActive(false);
+                    objekti2.SetActive(false);
+                    objekti3.SetActive(false);
+                    objekti4.SetActive(false);
+
+                    kysymysManageri.AktivoiTietoVisaCanvas();
+                }        
             }
             
         }
@@ -73,6 +91,11 @@ public class KysymyksetPollo : MonoBehaviour
         objekti1.SetActive(true);
         objekti2.SetActive(true);
         objekti3.SetActive(true);
+        if (objekti4 != null)
+        {
+            objekti4.SetActive(true);
+        }
+        
     }
 }
 

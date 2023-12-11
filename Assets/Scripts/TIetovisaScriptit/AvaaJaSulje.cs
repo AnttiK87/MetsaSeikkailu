@@ -9,6 +9,7 @@ public class AvaaJaSulje : MonoBehaviour
     public GameObject panelVinkki1;
     public GameObject panelVinkki2;
     public GameObject panelVinkki3;
+    public GameObject panelVinkki4;
     public AudioSource vinkkiAani;
     public Texture2D cursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
@@ -42,10 +43,21 @@ public class AvaaJaSulje : MonoBehaviour
 
     void ActivateVinkki1()
     {
-        if (VinkkiCanvas != null && !panelVinkki1.activeSelf && !panelVinkki2.activeSelf && !panelVinkki3.activeSelf)
+        if (panelVinkki4 == null)
         {
-            VinkkiCanvas.SetActive(true);
+            if (VinkkiCanvas != null && !panelVinkki1.activeSelf && !panelVinkki2.activeSelf && !panelVinkki3.activeSelf)
+            {
+                VinkkiCanvas.SetActive(true);
+            }
         }
+        else
+        {
+            if (VinkkiCanvas != null && !panelVinkki1.activeSelf && !panelVinkki2.activeSelf && !panelVinkki3.activeSelf && !panelVinkki4.activeSelf)
+            {
+                VinkkiCanvas.SetActive(true);
+            }
+        }
+   
     }
 
     public void suljeVinkki1()
