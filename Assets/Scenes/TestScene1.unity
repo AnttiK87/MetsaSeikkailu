@@ -7482,7 +7482,7 @@ MonoBehaviour:
   objektiPois: {fileID: 1333401515}
   objektiPaalle: {fileID: 1655365352}
   Haivytys: {fileID: 835315558}
-  Haivytysaika: 1
+  Haivytysaika: 3
 --- !u!1 &1689361157
 GameObject:
   m_ObjectHideFlags: 0
@@ -7999,8 +7999,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objektiPois: {fileID: 1333401515}
   objektiPaalle: {fileID: 1655365352}
-  Haivytys: {fileID: 0}
-  Haivytysaika: 1
+  Haivytys: {fileID: 835315558}
+  Haivytysaika: 3
 --- !u!212 &1923105402
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10239,6 +10239,10 @@ PrefabInstance:
     - target: {fileID: 4478559159774101294, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
       propertyPath: m_Name
       value: KentanVaihto
+      objectReference: {fileID: 0}
+    - target: {fileID: 4478559159774101294, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

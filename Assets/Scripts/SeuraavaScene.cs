@@ -9,7 +9,7 @@ public class SeuraavaScene : MonoBehaviour
     public GameObject objektiPaalle;
     public Animator Haivytys;
 
-    public float Haivytysaika = 1f;
+    public float Haivytysaika = 3f;
     //Objekti johon scripti on liitetty toimimaan nappina
     private void OnMouseUpAsButton()
     {

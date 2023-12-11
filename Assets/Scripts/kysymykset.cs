@@ -20,6 +20,7 @@ public class kysymykset : MonoBehaviour
     public GameObject objekti4;
     public GameObject nuoliSeuraavaScene;
     public GameObject kyselija;
+    public Animator KyselijaPois;
 
     //laskuri, että ensimmäinen ui ruutu näytetään vain ensimmäisellä kertaa
     private int counter = 0;
@@ -123,8 +124,8 @@ public class kysymykset : MonoBehaviour
         nuoliSeuraavaScene.SetActive(true);
 
         if (kyselija != null)
-            {
-                kyselija.SetActive(false); //kyselijä poistuu näyttämöltä tarvittaessa
+        {
+            KyselijaPois.SetTrigger("PoisSusi"); //kyselijä poistuu näyttämöltä tarvittaessa
         }
         
  
