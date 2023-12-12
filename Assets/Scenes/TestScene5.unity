@@ -1124,7 +1124,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 82194104}
+      - m_Target: {fileID: 1460538189}
         m_TargetAssemblyTypeName: AvaaJaSulje, Assembly-CSharp
         m_MethodName: suljeVinkki1
         m_Mode: 1
@@ -5426,7 +5426,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1460538189}
+      - m_Target: {fileID: 82194104}
         m_TargetAssemblyTypeName: AvaaJaSulje, Assembly-CSharp
         m_MethodName: suljeVinkki1
         m_Mode: 1
