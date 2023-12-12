@@ -24,7 +24,7 @@ public class HaeAika : MonoBehaviour
             int sekunnit = ajastin.HaeKuluneetSekunnit(); // haetaan kuluneet sekunnit
             aikaTeksti.text = "Seikkailusi kesto: " + minuutit + " min " + sekunnit + " s"; // asetetaan tekstiin kulunut aika
 
-            NollaaEnn‰tysAika(); // kutsutaan metodia joka nollaa enn‰tysajan
+            //NollaaEnn‰tysAika(); // kutsutaan metodia joka nollaa enn‰tysajan
             P‰ivit‰Enn‰tysAika(minuutit, sekunnit);// kutsutaan enn‰tysajan p‰ivitys metodia
         }
         else
@@ -66,7 +66,7 @@ public class HaeAika : MonoBehaviour
         }
     }
 
-    public void NollaaEnn‰tysAika() // metodi nollaa enn‰tysajan
+    public void NollaaEnn‰tysAika() // metodi enn‰tysajan nollaamiseen
     {
         PlayerPrefs.DeleteKey("EnnatysAika"); // poistetaan enn‰tysaika playerprefsist‰
         N‰yt‰Enn‰tysAika(); // kutsutaan metodia joka n‰ytt‰‰ enn‰tysajan

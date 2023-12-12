@@ -2730,7 +2730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Upeaa! Viimeinkin telkk\xE4 emo ja muut poikaset l\xF6ytyiv\xE4t!"
+  m_text: "Upeaa! Viimeinkin telkk\xE4 \nemo ja muut poikaset l\xF6ytyiv\xE4t!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
@@ -2887,8 +2887,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12, y: -240}
-  m_SizeDelta: {x: 1015.1106, y: 125.7061}
+  m_AnchoredPosition: {x: 24, y: -266.16437}
+  m_SizeDelta: {x: 701.7842, y: 183.8492}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1601445401
 MonoBehaviour:
