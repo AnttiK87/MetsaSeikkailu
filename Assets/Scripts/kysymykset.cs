@@ -23,6 +23,8 @@ public class kysymykset : MonoBehaviour
     public Animator KyselijaPois;
     private List<GameObject> TagattavatObjektit = new List<GameObject>();
     public GameObject[] TagatytObjektit;
+    public AudioSource oikeinAani;
+    public AudioSource vaarinAani;
 
     //laskuri, ett‰ ensimm‰inen ui ruutu n‰ytet‰‰n vain ensimm‰isell‰ kertaa
     private int counter = 0;
@@ -124,6 +126,7 @@ public class kysymykset : MonoBehaviour
         textKysymys1.SetActive(false);
         textKysymys2.SetActive(false);
         textVaarin.SetActive(true);
+        vaarinAani.Play();
 
         //kutsu pelinkestoscripti‰ ja lis‰‰ aikaa v‰‰r‰st‰ vastauksesta
         PelinKestoScripti ajastin = FindObjectOfType<PelinKestoScripti>();
@@ -139,6 +142,7 @@ public class kysymykset : MonoBehaviour
     {
         textKysymys1.SetActive(false);
         textKysymys2.SetActive(true);
+        oikeinAani.Play();
     }
 
     //t‰m‰ metodi liitet‰‰n ekan ui n‰ytˆn toisen kysymyksen oikea vastaus nappiin
@@ -146,6 +150,7 @@ public class kysymykset : MonoBehaviour
     {
         textKysymys2.SetActive(false);
         textOikein.SetActive(true);
+        oikeinAani.Play();
 
         GameObject suurennuslasi = GameObject.FindWithTag("SuurennusLasi");
 
