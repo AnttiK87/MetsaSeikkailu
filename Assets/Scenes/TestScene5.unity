@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.40523887, g: 0.39671633, b: 0.36511368, a: 1}
+  m_IndirectSpecularColor: {r: 0.40523955, g: 0.3967174, b: 0.36511475, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -589,9 +589,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 449771415}
-  panelVinkki1: {fileID: 122307089}
+  panelVinkki1: {fileID: 449771415}
   panelVinkki2: {fileID: 1055022200}
-  panelVinkki3: {fileID: 449771415}
+  panelVinkki3: {fileID: 122307089}
   panelVinkki4: {fileID: 1970519184}
   vinkkiAani: {fileID: 1726801477}
   cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
@@ -1106,8 +1106,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
+    m_PressedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1239,8 +1239,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
+    m_PressedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1493,8 +1493,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
+    m_PressedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1755,8 +1755,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
+    m_PressedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2146,12 +2146,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: " Pulkkosieni on laakea, vanhana suppilomainen sieni. Lakki on s\xE4\xE4misk\xE4m\xE4inen
     ja nahanruskea, sen keskell\xE4 on loiva kohouma. Lakin reunat ovat voimakkaasti
-    sis\xE4\xE4nkiertyneet. Heltat ovat johteiset, nuorena vaaleat ja vanhempana
-    ruosteenkellert\xE4v\xE4t ja ne tummuvat kosketuskohdista. Ne irtoavat helposti
-    lakista. Lakin v\xE4rinen ruskea jalka kapenee usein tyveen. Sieni kasvaa yleisesti
-    koko maassa monenlaisilla kasvupaikoilla. Pulkkosienen haitalliset yhdisteet
-    aiheuttavat mm. tukoksia verenkierrossa, pahoinvointia ja munuaisten toimintah\xE4iri\xF6it\xE4,
-    mist\xE4 voi aiheutua hengenvaarallinen tila."
+    sis\xE4\xE4nkiertyneet. Sieni kasvaa yleisesti koko maassa monenlaisilla kasvupaikoilla.
+    Pulkkosienen haitalliset yhdisteet aiheuttavat mm. tukoksia verenkierrossa, pahoinvointia
+    ja munuaisten toimintah\xE4iri\xF6it\xE4, mist\xE4 voi aiheutua hengenvaarallinen
+    tila."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
@@ -2407,8 +2405,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
+    m_PressedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2692,7 +2690,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2884,9 +2882,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 1970519184}
-  panelVinkki1: {fileID: 122307089}
+  panelVinkki1: {fileID: 449771415}
   panelVinkki2: {fileID: 1055022200}
-  panelVinkki3: {fileID: 449771415}
+  panelVinkki3: {fileID: 122307089}
   panelVinkki4: {fileID: 1970519184}
   vinkkiAani: {fileID: 1726801477}
   cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
@@ -2995,7 +2993,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717100510}
   m_LocalRotation: {x: 0.030873004, y: -0.018488133, z: 0.0005711538, w: 0.99935216}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.73316544, y: 0.843708, z: 0.9987961}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -3004,7 +3002,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -175}
+  m_AnchoredPosition: {x: 0, y: -220}
   m_SizeDelta: {x: 340, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &717100512
@@ -3029,8 +3027,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
+    m_PressedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -3221,9 +3219,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 122307089}
-  panelVinkki1: {fileID: 122307089}
+  panelVinkki1: {fileID: 449771415}
   panelVinkki2: {fileID: 1055022200}
-  panelVinkki3: {fileID: 449771415}
+  panelVinkki3: {fileID: 122307089}
   panelVinkki4: {fileID: 1970519184}
   vinkkiAani: {fileID: 1726801477}
   cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
@@ -3287,9 +3285,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mustikka on mets\xE4ss\xE4 kasvava pensas, joka tuottaa ravintorikkaita
-    marjoja, jotka ovat t\xE4rke\xE4 ravinnonl\xE4hde monille mets\xE4n el\xE4imille
-    ja linnuille.  "
+  m_text: "Karhu on kaikkiruokainen mets\xE4n suurpeto, joka sy\xF6 marjoja, kasveja,
+    kalaa ja pienempi\xE4 nis\xE4kk\xE4it\xE4. Sen toiminta edist\xE4\xE4 siementen
+    levi\xE4mist\xE4 ja mets\xE4n uusiutumista. Talviunessaan karhu lep\xE4\xE4 syksyst\xE4
+    kev\xE4\xE4seen, mutta uni ei ole syv\xE4\xE4, vaan karhu pysyy valppaana mahdollisten
+    vaarojen varalta.  "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
@@ -3499,7 +3499,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e58a8333002e6bc4193bd09dde90dbb5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6fd4c256df41a3a47ac1bb4d65a593e6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3681,7 +3681,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -354.96655, y: 117.15552}
-  m_SizeDelta: {x: 905.6298, y: 510.8802}
+  m_SizeDelta: {x: 905.6298, y: 480.8802}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &918297249
 MonoBehaviour:
@@ -3782,8 +3782,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
+    m_PressedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -4289,7 +4289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6fd4c256df41a3a47ac1bb4d65a593e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e58a8333002e6bc4193bd09dde90dbb5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4593,8 +4593,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
+    m_PressedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5142,7 +5142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1361533454
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5161,8 +5161,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: 249.8}
-  m_SizeDelta: {x: 670, y: 220}
+  m_AnchoredPosition: {x: -322, y: 186}
+  m_SizeDelta: {x: 694.9012, y: 333.0175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1361533455
 MonoBehaviour:
@@ -5187,7 +5187,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5319,8 +5319,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
+    m_PressedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5584,8 +5584,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Seuraava
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
+  m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5609,13 +5609,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5825,9 +5825,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 1055022200}
-  panelVinkki1: {fileID: 122307089}
+  panelVinkki1: {fileID: 449771415}
   panelVinkki2: {fileID: 1055022200}
-  panelVinkki3: {fileID: 449771415}
+  panelVinkki3: {fileID: 122307089}
   panelVinkki4: {fileID: 1970519184}
   vinkkiAani: {fileID: 1726801477}
   cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
@@ -7638,11 +7638,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Karhu on kaikkiruokainen mets\xE4n suurpeto, joka sy\xF6 marjoja, kasveja,
-    kalaa ja pienempi\xE4 nis\xE4kk\xE4it\xE4. Sen toiminta edist\xE4\xE4 siementen
-    levi\xE4mist\xE4 ja mets\xE4n uusiutumista. Talviunessaan karhu lep\xE4\xE4 syksyst\xE4
-    kev\xE4\xE4seen, mutta uni ei ole syv\xE4\xE4, vaan karhu pysyy valppaana mahdollisten
-    vaarojen varalta.  "
+  m_text: "Mustikka on mets\xE4ss\xE4 kasvava pensas, joka tuottaa ravintorikkaita
+    marjoja, jotka ovat t\xE4rke\xE4 ravinnonl\xE4hde monille mets\xE4n el\xE4imille
+    ja linnuille.  "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
@@ -7780,8 +7778,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
+    m_PressedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7989,7 +7987,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 28, y: -1}
+  m_AnchoredPosition: {x: 28, y: -0.99998474}
   m_SizeDelta: {x: -103.596, y: -20.822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1986391486
@@ -8041,8 +8039,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
