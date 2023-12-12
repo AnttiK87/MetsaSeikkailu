@@ -581,7 +581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.2296, y: 2.39}
+  m_AnchoredPosition: {x: 4.229599, y: 2.3899994}
   m_SizeDelta: {x: 722.9541, y: 188.9098}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1031262572
@@ -739,6 +739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KentanVaihto
       objectReference: {fileID: 0}
+    - target: {fileID: 4478559159774101294, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -792,7 +796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 35, y: -135.22357}
+  m_AnchoredPosition: {x: 35, y: -138}
   m_SizeDelta: {x: -1164.2802, y: -801.6486}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1051716538
@@ -1098,8 +1102,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
+    m_PressedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
