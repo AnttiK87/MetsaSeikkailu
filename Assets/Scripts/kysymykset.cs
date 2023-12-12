@@ -22,6 +22,7 @@ public class kysymykset : MonoBehaviour
     public GameObject kyselija;
     public Animator KyselijaPois;
     private List<GameObject> TagattavatObjektit = new List<GameObject>();
+    public GameObject[] TagatytObjektit;
 
     //laskuri, ett‰ ensimm‰inen ui ruutu n‰ytet‰‰n vain ensimm‰isell‰ kertaa
     private int counter = 0;
@@ -77,7 +78,14 @@ public class kysymykset : MonoBehaviour
             objekti2.SetActive(true);
             objekti3.SetActive(true);
             objekti4.SetActive(true);
-               
+
+            TagatytObjektit = GameObject.FindGameObjectsWithTag("Vinkkaaja");
+
+            foreach (GameObject obj in TagatytObjektit)
+            {
+                obj.tag = "Untagged";
+            }
+
             //n‰ytet‰‰n canvas jossa kysymykset ovat
             panel2.SetActive(true);
             textVaarin.SetActive(false); //jos vastattu v‰‰rin aikaisemmin niin suljetaan v‰r‰n vastauksen teksti
@@ -130,6 +138,12 @@ public class kysymykset : MonoBehaviour
     {
         textKysymys2.SetActive(false);
         textOikein.SetActive(true);
+
+        GameObject suurennuslasi = GameObject.FindWithTag("SuurennusLasi");
+        if (suurennuslasi != null)
+        {
+            suurennuslasi.SetActive(false);
+        }
     }
 
     //t‰m‰ metodi liitet‰‰n ekan ui loppu n‰ytˆn eteenp‰in nappiin

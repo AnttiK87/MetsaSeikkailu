@@ -3721,7 +3721,7 @@ GameObject:
   - component: {fileID: 923177538}
   m_Layer: 0
   m_Name: kapytikka
-  m_TagString: Vinkki4
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7057,7 +7057,7 @@ GameObject:
   - component: {fileID: 1570093767}
   m_Layer: 0
   m_Name: kivi
-  m_TagString: Vinkki3
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9402,7 +9402,7 @@ GameObject:
   - component: {fileID: 2057294909}
   m_Layer: 0
   m_Name: puska
-  m_TagString: Vinkki2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10036,7 +10036,7 @@ GameObject:
   - component: {fileID: 2125482902}
   m_Layer: 0
   m_Name: pontto
-  m_TagString: Vinkki1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
