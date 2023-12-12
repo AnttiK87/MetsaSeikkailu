@@ -21,9 +21,22 @@ public class kysymykset : MonoBehaviour
     public GameObject nuoliSeuraavaScene;
     public GameObject kyselija;
     public Animator KyselijaPois;
+    private List<GameObject> TagattavatObjektit = new List<GameObject>();
 
     //laskuri, että ensimmäinen ui ruutu näytetään vain ensimmäisellä kertaa
     private int counter = 0;
+
+    void Start()
+    {
+        // Assign game objects to the list
+        TagattavatObjektit.Add(objekti1);
+        TagattavatObjektit.Add(objekti2);
+        TagattavatObjektit.Add(objekti3);
+        if (objekti4 != null)
+        {
+            TagattavatObjektit.Add(objekti4);
+        }
+    }
 
     //Objekti johon scripti on liitetty toimimaan nappina
     private void OnMouseUpAsButton()
@@ -58,7 +71,6 @@ public class kysymykset : MonoBehaviour
     {
         if (!panel2.activeSelf && panel2 != null && !GameObject.FindWithTag("Vinkki"))
         {
-            Aktivoi(); //aktivoidaan vikki scripti
 
             //Varmistetaan, että vinkkejä antavat objektit ovat aktiivisina
             objekti1.SetActive(true);
@@ -89,6 +101,13 @@ public class kysymykset : MonoBehaviour
         panel2.SetActive(false);
         textKysymys1.SetActive(true);
         textKysymys2.SetActive(false);
+        foreach (GameObject obj in TagattavatObjektit)
+        {
+            if (obj != null)
+            {
+                obj.tag = "Vinkkaaja";
+            }
+        }
     }
 
     ////tämä metodi liitetään ekan ui näytön väärä vastaus nappeihin
@@ -116,8 +135,6 @@ public class kysymykset : MonoBehaviour
     //tämä metodi liitetään ekan ui loppu näytön eteenpäin nappiin
     public void TerminateCanvas()
     {
-        Deaktivoi(); //vinkki objektit deaktivoidaan
-
         Destroy(panel2); //kysymys paneelit tuhotaan
 
         //Avataan nuoli jolla pääsee seuraavaan sceneen
@@ -129,17 +146,5 @@ public class kysymykset : MonoBehaviour
         }
         
  
-    }
-
-    //Kutsutaan vinkki luokkan metodia ja aktivoidaan vinkkien näyttö
-    void Aktivoi()
-    {
-        Vinkki.VinkkiInstanssi.AktivoiScript();
-    }
-
-    //Kutsutaan vinkki luokkan metodia ja deaktivoidaan vinkkien näyttö
-    void Deaktivoi()
-    {
-        Vinkki.VinkkiInstanssi.DeaktivoiScript();
     }
 }

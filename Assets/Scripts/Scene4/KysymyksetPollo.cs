@@ -19,10 +19,23 @@ public class KysymyksetPollo : MonoBehaviour
     public GameObject vinkki4;
     public GameObject kyselija;
     public KysymysManageri kysymysManageri;
-
+    private List<GameObject> TagattavatObjektit = new List<GameObject>();
 
     //laskuri, ett‰ ensimm‰inen ui ruutu n‰ytet‰‰n vain ensimm‰isell‰ kertaa
     private int counter = 0;
+
+    void Start()
+    {
+        // Assign game objects to the list
+        TagattavatObjektit.Add(objekti1);
+        TagattavatObjektit.Add(objekti2);
+        TagattavatObjektit.Add(objekti3);
+        if (objekti4 != null)
+        {
+            TagattavatObjektit.Add(objekti4);
+        }
+    }
+
 
     //Objekti johon scripti on liitetty toimimaan nappina
     private void OnMouseUpAsButton()
@@ -95,7 +108,14 @@ public class KysymyksetPollo : MonoBehaviour
         {
             objekti4.SetActive(true);
         }
-        
+
+        foreach (GameObject obj in TagattavatObjektit)
+        {
+            if (obj != null)
+            {
+                obj.tag = "Vinkkaaja";
+            }
+        }
     }
 }
 

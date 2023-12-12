@@ -13,17 +13,20 @@ public class Vinkki : MonoBehaviour
     public GameObject panelVinkki4;
     public GameObject Kysymykset;
     private string klikattu;
-    private bool isEnabled = false;
+    public bool isEnabled = false;
 
     //Aktivoidana vinkki luokka, ett‰ sit‰ voidaan kutsua kysymykset luokasta
-    public static Vinkki VinkkiInstanssi;
+    public static Vinkki VinkkiInstanssi { get; private set; }
+
     private void Awake()
     {
         if (VinkkiInstanssi == null)
         {
             VinkkiInstanssi = this;
+            // Additional initialization code if needed
         }
     }
+
 
     //Kuunnellaan klikataanko jotain vinkki objekteista
     private void Update()
@@ -64,7 +67,7 @@ public class Vinkki : MonoBehaviour
     {
         //katsotaan onko kysymys ruutu auki jos on niin ei avata vinkki‰ p‰‰lle
             //ps. Vaatii paljon drag droppia unityn puolella.
-        if (!Kysymykset.activeSelf && Kysymykset != null && !panelVinkki1.activeSelf && !panelVinkki2.activeSelf && !panelVinkki3.activeSelf && !panelVinkki4.activeSelf)
+        if (!Kysymykset.activeSelf && Kysymykset != null && !GameObject.FindWithTag("Vinkki"))
         {
             //tarkastetaan mij‰ vinkki n‰ytet‰‰n.
             //ps. Vaatii paljon drag droppia unityn puolella.

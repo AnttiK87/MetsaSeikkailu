@@ -765,7 +765,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
+        m_TargetAssemblyTypeName: kysymykset, Assembly-CSharp
         m_MethodName: VaaraNappi
         m_Mode: 1
         m_Arguments:
@@ -1308,8 +1308,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1570093766}
-        m_TargetAssemblyTypeName: Vinkki, Assembly-CSharp
+      - m_Target: {fileID: 1570093767}
+        m_TargetAssemblyTypeName: AvaaJaSulje, Assembly-CSharp
         m_MethodName: suljeVinkki1
         m_Mode: 1
         m_Arguments:
@@ -1496,6 +1496,134 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &426486227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 426486229}
+  - component: {fileID: 426486228}
+  m_Layer: 0
+  m_Name: AudioVinkki
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &426486228
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426486227}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 354247bbac637af4c95f6d8d96d36aab, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.202
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &426486229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426486227}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1197.2593, y: 310.38336, z: 7.0469303}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2369,7 +2497,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 687295230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a60afa64f3f1b7749a8c97431b25b4c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b078fb41e0762a41ace10ace3e3a9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   panelPre: {fileID: 1635830955}
@@ -2385,6 +2513,7 @@ MonoBehaviour:
   objekti4: {fileID: 923177533}
   nuoliSeuraavaScene: {fileID: 1923105399}
   kyselija: {fileID: 0}
+  KyselijaPois: {fileID: 0}
 --- !u!1 &698207433
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,7 +2809,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
+        m_TargetAssemblyTypeName: kysymykset, Assembly-CSharp
         m_MethodName: OikeaNappi2
         m_Mode: 1
         m_Arguments:
@@ -3188,7 +3317,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
+        m_TargetAssemblyTypeName: kysymykset, Assembly-CSharp
         m_MethodName: VinkkiNappi
         m_Mode: 1
         m_Arguments:
@@ -3321,7 +3450,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
+        m_TargetAssemblyTypeName: kysymykset, Assembly-CSharp
         m_MethodName: OikeaNappi1
         m_Mode: 1
         m_Arguments:
@@ -3529,7 +3658,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
+        m_TargetAssemblyTypeName: kysymykset, Assembly-CSharp
         m_MethodName: VinkkiNappi
         m_Mode: 1
         m_Arguments:
@@ -3588,8 +3717,8 @@ GameObject:
   m_Component:
   - component: {fileID: 923177535}
   - component: {fileID: 923177534}
-  - component: {fileID: 923177536}
   - component: {fileID: 923177537}
+  - component: {fileID: 923177538}
   m_Layer: 0
   m_Name: kapytikka
   m_TagString: Vinkki4
@@ -3664,23 +3793,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 18.59, y: 62.684, z: -52.401}
---- !u!114 &923177536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 923177533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda18adf1fcd2ad429db8490019dd6d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelVinkki1: {fileID: 795935851}
-  panelVinkki2: {fileID: 639166696}
-  panelVinkki3: {fileID: 1818856136}
-  panelVinkki4: {fileID: 2019008917}
-  Kysymykset: {fileID: 1538795228}
 --- !u!65 &923177537
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3702,6 +3814,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.800003, y: 10.800001, z: 0.20000131}
   m_Center: {x: 0.0000019073486, y: 0, z: -0.0000076293945}
+--- !u!114 &923177538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923177533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0cdaf83ea0cf9438fb6d0378fdd048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VinkkiCanvas: {fileID: 2019008917}
+  vinkkiAani: {fileID: 426486228}
+  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &931306995
 GameObject:
   m_ObjectHideFlags: 0
@@ -4054,7 +4183,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
+        m_TargetAssemblyTypeName: kysymykset, Assembly-CSharp
         m_MethodName: SeuraavaNappi
         m_Mode: 1
         m_Arguments:
@@ -4338,8 +4467,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2057294907}
-        m_TargetAssemblyTypeName: Vinkki, Assembly-CSharp
+      - m_Target: {fileID: 2057294909}
+        m_TargetAssemblyTypeName: AvaaJaSulje, Assembly-CSharp
         m_MethodName: suljeVinkki1
         m_Mode: 1
         m_Arguments:
@@ -4607,7 +4736,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
+        m_TargetAssemblyTypeName: kysymykset, Assembly-CSharp
         m_MethodName: VinkkiNappi
         m_Mode: 1
         m_Arguments:
@@ -5075,7 +5204,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
+        m_TargetAssemblyTypeName: kysymykset, Assembly-CSharp
         m_MethodName: VaaraNappi
         m_Mode: 1
         m_Arguments:
@@ -6231,7 +6360,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
+        m_TargetAssemblyTypeName: kysymykset, Assembly-CSharp
         m_MethodName: VaaraNappi
         m_Mode: 1
         m_Arguments:
@@ -6925,7 +7054,7 @@ GameObject:
   - component: {fileID: 1570093763}
   - component: {fileID: 1570093762}
   - component: {fileID: 1570093765}
-  - component: {fileID: 1570093766}
+  - component: {fileID: 1570093767}
   m_Layer: 0
   m_Name: kivi
   m_TagString: Vinkki3
@@ -7021,7 +7150,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 12.810003, y: 7.58, z: 0.20000075}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1570093766
+--- !u!114 &1570093767
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7030,14 +7159,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1570093761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda18adf1fcd2ad429db8490019dd6d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a0cdaf83ea0cf9438fb6d0378fdd048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelVinkki1: {fileID: 795935851}
-  panelVinkki2: {fileID: 639166696}
-  panelVinkki3: {fileID: 1818856136}
-  panelVinkki4: {fileID: 2019008917}
-  Kysymykset: {fileID: 1538795228}
+  VinkkiCanvas: {fileID: 1818856136}
+  vinkkiAani: {fileID: 426486228}
+  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1579012153
 GameObject:
   m_ObjectHideFlags: 0
@@ -7876,8 +8005,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 923177536}
-        m_TargetAssemblyTypeName: Vinkki, Assembly-CSharp
+      - m_Target: {fileID: 923177538}
+        m_TargetAssemblyTypeName: AvaaJaSulje, Assembly-CSharp
         m_MethodName: suljeVinkki1
         m_Mode: 1
         m_Arguments:
@@ -9076,8 +9205,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2125482901}
-        m_TargetAssemblyTypeName: Vinkki, Assembly-CSharp
+      - m_Target: {fileID: 2125482902}
+        m_TargetAssemblyTypeName: AvaaJaSulje, Assembly-CSharp
         m_MethodName: suljeVinkki1
         m_Mode: 1
         m_Arguments:
@@ -9210,7 +9339,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687295237}
-        m_TargetAssemblyTypeName: KysymyksetSusi, Assembly-CSharp
+        m_TargetAssemblyTypeName: kysymykset, Assembly-CSharp
         m_MethodName: TerminateCanvas
         m_Mode: 1
         m_Arguments:
@@ -9269,8 +9398,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2057294906}
   - component: {fileID: 2057294905}
-  - component: {fileID: 2057294907}
   - component: {fileID: 2057294908}
+  - component: {fileID: 2057294909}
   m_Layer: 0
   m_Name: puska
   m_TagString: Vinkki2
@@ -9345,23 +9474,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -41.786, z: -8.481}
---- !u!114 &2057294907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2057294904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda18adf1fcd2ad429db8490019dd6d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelVinkki1: {fileID: 795935851}
-  panelVinkki2: {fileID: 639166696}
-  panelVinkki3: {fileID: 1818856136}
-  panelVinkki4: {fileID: 2019008917}
-  Kysymykset: {fileID: 1538795228}
 --- !u!65 &2057294908
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9383,6 +9495,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 15.47, y: 14.33, z: 0.2000001}
   m_Center: {x: 0, y: 0.0000019073486, z: 0}
+--- !u!114 &2057294909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057294904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0cdaf83ea0cf9438fb6d0378fdd048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VinkkiCanvas: {fileID: 639166696}
+  vinkkiAani: {fileID: 426486228}
+  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &2058159506
 GameObject:
   m_ObjectHideFlags: 0
@@ -9904,7 +10033,7 @@ GameObject:
   - component: {fileID: 2125482896}
   - component: {fileID: 2125482899}
   - component: {fileID: 2125482900}
-  - component: {fileID: 2125482901}
+  - component: {fileID: 2125482902}
   m_Layer: 0
   m_Name: pontto
   m_TagString: Vinkki1
@@ -10020,7 +10149,7 @@ MonoBehaviour:
   rawImageVideo1: {fileID: 260266915}
   rawImageVideo2: {fileID: 2129734378}
   telkka: {fileID: 1333401515}
---- !u!114 &2125482901
+--- !u!114 &2125482902
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10029,14 +10158,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2125482895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda18adf1fcd2ad429db8490019dd6d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a0cdaf83ea0cf9438fb6d0378fdd048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelVinkki1: {fileID: 795935851}
-  panelVinkki2: {fileID: 639166696}
-  panelVinkki3: {fileID: 1818856136}
-  panelVinkki4: {fileID: 2019008917}
-  Kysymykset: {fileID: 1538795228}
+  VinkkiCanvas: {fileID: 795935851}
+  vinkkiAani: {fileID: 426486228}
+  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &2129734378
 GameObject:
   m_ObjectHideFlags: 0
@@ -10335,3 +10464,4 @@ SceneRoots:
   - {fileID: 793822366}
   - {fileID: 1655365355}
   - {fileID: 1422628348}
+  - {fileID: 426486229}

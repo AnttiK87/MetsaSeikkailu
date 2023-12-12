@@ -19,6 +19,18 @@ public class KysymyksetSusi : MonoBehaviour
     public GameObject objekti4;
     public GameObject nuoliSeuraavaScene;
     public GameObject kyselija;
+    private List<GameObject> TagattavatObjektit = new List<GameObject>();
+    void Start()
+    {
+        // Assign game objects to the list
+        TagattavatObjektit.Add(objekti1);
+        TagattavatObjektit.Add(objekti2);
+        TagattavatObjektit.Add(objekti3);
+        if (objekti4 != null)
+        {
+            TagattavatObjektit.Add(objekti4);
+        }
+    }
 
     private int counter = 0;
 
@@ -50,11 +62,12 @@ public class KysymyksetSusi : MonoBehaviour
     {
         if (!panel2.activeSelf && panel2 != null && !GameObject.FindWithTag("Vinkki"))
         {
-            Aktivoi();
+            
             objekti1.SetActive(true);
             objekti2.SetActive(true);
             objekti3.SetActive(true);
             objekti4.SetActive(true);
+            
             panel2.SetActive(true);
             textVaarin.SetActive(false);
             textKysymys1.SetActive(true);
@@ -72,6 +85,13 @@ public class KysymyksetSusi : MonoBehaviour
         panel2.SetActive(false);
         textKysymys1.SetActive(true);
         textKysymys2.SetActive(false);
+        foreach (GameObject obj in TagattavatObjektit)
+        {
+            if (obj != null)
+            {
+                obj.tag = "Vinkkaaja";
+            }
+        }
     }
 
     public void VaaraNappi()
@@ -95,8 +115,6 @@ public class KysymyksetSusi : MonoBehaviour
 
     public void TerminateCanvas()
     {
-        Deaktivoi();
- 
         Destroy(panel2);
         
         nuoliSeuraavaScene.SetActive(true);
@@ -106,14 +124,5 @@ public class KysymyksetSusi : MonoBehaviour
         }
     }
 
-    void Aktivoi()
-    {
-        Vinkki.VinkkiInstanssi.AktivoiScript();
-    }
-
-    void Deaktivoi()
-    {
-        Vinkki.VinkkiInstanssi.DeaktivoiScript();
-    }
 }
 

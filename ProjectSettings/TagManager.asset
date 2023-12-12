@@ -12,6 +12,8 @@ TagManager:
   - Vinkki4
   - Vinkki
   - VaaraVastaus
+  - Kyselija
+  - Vinkkaaja
   layers:
   - Default
   - TransparentFX
