@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 29353581}
   m_Layer: 5
   m_Name: CanvasVinkkiSani
-  m_TagString: Untagged
+  m_TagString: Vinkki
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -858,7 +858,7 @@ GameObject:
   - component: {fileID: 250810875}
   m_Layer: 5
   m_Name: CanvasVinkkiNarhi
-  m_TagString: Untagged
+  m_TagString: Vinkki
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1163,7 +1163,7 @@ GameObject:
   - component: {fileID: 362784859}
   m_Layer: 5
   m_Name: CanvasVinkkiPihlaja
-  m_TagString: Untagged
+  m_TagString: Vinkki
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2551,6 +2551,7 @@ MonoBehaviour:
   panelVinkki1: {fileID: 250810874}
   panelVinkki2: {fileID: 29353580}
   panelVinkki3: {fileID: 362784858}
+  panelVinkki4: {fileID: 0}
   vinkkiAani: {fileID: 1644365918}
   cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
   cursorMode: 0
@@ -3442,6 +3443,7 @@ MonoBehaviour:
   panelVinkki1: {fileID: 250810874}
   panelVinkki2: {fileID: 29353580}
   panelVinkki3: {fileID: 362784858}
+  panelVinkki4: {fileID: 0}
   vinkkiAani: {fileID: 1644365918}
   cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
   cursorMode: 0
@@ -4133,9 +4135,11 @@ MonoBehaviour:
   objekti1: {fileID: 1107116758}
   objekti2: {fileID: 1879296239}
   objekti3: {fileID: 748953643}
+  objekti4: {fileID: 0}
   vinkki1: {fileID: 250810874}
   vinkki2: {fileID: 29353580}
   vinkki3: {fileID: 362784858}
+  vinkki4: {fileID: 0}
   kyselija: {fileID: 0}
   kysymysManageri: {fileID: 1643649235}
 --- !u!1 &1456887515
@@ -6502,6 +6506,7 @@ MonoBehaviour:
   panelVinkki1: {fileID: 250810874}
   panelVinkki2: {fileID: 29353580}
   panelVinkki3: {fileID: 362784858}
+  panelVinkki4: {fileID: 0}
   vinkkiAani: {fileID: 1644365918}
   cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
   cursorMode: 0

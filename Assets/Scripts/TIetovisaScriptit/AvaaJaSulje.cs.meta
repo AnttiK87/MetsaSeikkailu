@@ -6,7 +6,7 @@ MonoImporter:
   defaultReferences:
   - VinkkiCanvas: {instanceID: 0}
   - vinkkiAani: {instanceID: 0}
-  - cursorTexture: {fileID: 2800000, guid: c543e42b6e1d1b34a9caeafe9991f499, type: 3}
+  - cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

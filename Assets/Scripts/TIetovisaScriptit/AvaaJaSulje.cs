@@ -6,14 +6,11 @@ public class AvaaJaSulje : MonoBehaviour
 {
 
     public GameObject VinkkiCanvas;
-    public GameObject panelVinkki1;
-    public GameObject panelVinkki2;
-    public GameObject panelVinkki3;
-    public GameObject panelVinkki4;
     public AudioSource vinkkiAani;
     public Texture2D cursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
+    private string klikattu;
 
 
     public void Start()
@@ -36,27 +33,36 @@ public class AvaaJaSulje : MonoBehaviour
     }
     private void OnMouseUpAsButton()
     {
-        //Debug.Log("nappia painettu");
-        ActivateVinkki1();
-        vinkkiAani.Play();
+        // M‰‰ritet‰‰n klikattiinko objektia ja mik‰ se oli
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        //Jos osui objektiin
+        if (Physics.Raycast(ray, out hit))
+        {
+            // Haetaan objektille oleva tagi 
+            if (hit.collider.gameObject.tag != null)
+            {
+                //tallennetaan tagi muuttujaan
+                klikattu = hit.collider.gameObject.tag;
+            }
+            if (klikattu.Equals("Vinkkaaja"))
+            {
+                //Debug.Log("nappia painettu");
+                ActivateVinkki1();
+            }
+        }
     }
 
     void ActivateVinkki1()
     {
-        if (panelVinkki4 == null)
-        {
-            if (VinkkiCanvas != null && !panelVinkki1.activeSelf && !panelVinkki2.activeSelf && !panelVinkki3.activeSelf)
+
+            if (VinkkiCanvas != null && !GameObject.FindWithTag("Vinkki"))
             {
                 VinkkiCanvas.SetActive(true);
+                vinkkiAani.Play();
             }
-        }
-        else
-        {
-            if (VinkkiCanvas != null && !panelVinkki1.activeSelf && !panelVinkki2.activeSelf && !panelVinkki3.activeSelf && !panelVinkki4.activeSelf)
-            {
-                VinkkiCanvas.SetActive(true);
-            }
-        }
+ 
    
     }
 
