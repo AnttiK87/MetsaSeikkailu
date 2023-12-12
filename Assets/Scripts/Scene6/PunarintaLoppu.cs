@@ -8,6 +8,8 @@ public class PunarintaLoppu : MonoBehaviour
     public GameObject AvattavaUi;
     public GameObject loppuTelkka;
     public GameObject loppuTelkkaTeksti;
+    public Animator Lopetus;
+
 
     public void TekstiAuki()
     {
@@ -23,6 +25,11 @@ public class PunarintaLoppu : MonoBehaviour
     public void LoppuTelkkaTeksti()
     {
         loppuTelkkaTeksti.SetActive(true);
+    }
 
+    public void LopetusAnimaatio()
+    {
+        loppuTelkkaTeksti.SetActive(false);
+        Lopetus.SetTrigger("LoppuAnimaatio");
     }
 }
