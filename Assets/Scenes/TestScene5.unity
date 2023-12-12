@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2032e14514a820747bf8b38bdcecb9b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 72a755971f60b9a4b9b2945acfd113c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0cdaf83ea0cf9438fb6d0378fdd048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VinkkiCanvas: {fileID: 449771415}
+  VinkkiCanvas: {fileID: 1055022200}
   vinkkiAani: {fileID: 1726801477}
   cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
   cursorMode: 0
@@ -3584,7 +3584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6fd4c256df41a3a47ac1bb4d65a593e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 19ad1f2ae0c68814d85a9be5a9c4b7cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3996,7 +3996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: adbb269c79f8da248a76de10bd9e0d00, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ea00391890f5924580c7279d26c6411, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4374,7 +4374,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e58a8333002e6bc4193bd09dde90dbb5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7f828bf81d9ee9049bc4e66a87dd03e1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5909,7 +5909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0cdaf83ea0cf9438fb6d0378fdd048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VinkkiCanvas: {fileID: 1055022200}
+  VinkkiCanvas: {fileID: 449771415}
   vinkkiAani: {fileID: 1726801477}
   cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
   cursorMode: 0
