@@ -145,6 +145,14 @@ public class KysymysManageri : MonoBehaviour
         {
             // V‰‰r‰ vastaus
             Vaarintxt.SetActive(true);
+
+            //kutsu pelinkestoscripti‰ ja lis‰‰ aikaa v‰‰r‰st‰ vastauksesta
+            PelinKestoScripti ajastin = FindObjectOfType<PelinKestoScripti>();
+            if (ajastin != null)
+            {
+                ajastin.LisaaAikaa();
+            }
+
             // Soita "v‰‰r‰" ‰‰ni
             vaarinAani.Play();
         }

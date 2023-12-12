@@ -30,12 +30,13 @@ public class HaeAika : MonoBehaviour
         {
             print("PelinKestoScripti not found"); // jos pelin kesto scripti‰ ei lˆydy annetaan error
         }
+        Debug.Log("Tallennettu enn‰tysaika: " + PlayerPrefs.GetFloat("EnnatysAika", float.MaxValue));
     }
 
     void P‰ivit‰Enn‰tysAika(int minuutit, int sekunnit) // metodi p‰ivitt‰‰ enn‰tysajan
     {
         float nykyinenAika = minuutit * 60 + sekunnit; // lasketaan nykyinen aika taas sekunneiksi
-        float ennatysAika = PlayerPrefs.GetFloat("EnnatysAika", float.MaxValue); // haetaan vanha enn‰tysaika
+        float ennatysAika = PlayerPrefs.GetFloat("EnnatysAika", float.MaxValue); // haetaan vanha enn‰tysaika playerprefsist‰ ja jos sit‰ ei ole asetettu niin k‰ytet‰‰n float.MaxValue
 
         if (nykyinenAika < ennatysAika) // jos nykyinen aika on pienempi kuin vanha enn‰tysaika
         {
@@ -62,5 +63,11 @@ public class HaeAika : MonoBehaviour
                 enn‰tysAikaTeksti.text = "Nopein aika: - "; // asetetaan tekstiin -
             }
         }
+    }
+
+    public void NollaaEnn‰tysAika() // metodi nollaa enn‰tysajan
+    {
+        PlayerPrefs.DeleteKey("EnnatysAika"); // poistetaan enn‰tysaika playerprefsist‰
+        N‰yt‰Enn‰tysAika(); // kutsutaan metodia joka n‰ytt‰‰ enn‰tysajan
     }
 }

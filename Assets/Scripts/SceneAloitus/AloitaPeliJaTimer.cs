@@ -14,7 +14,7 @@ public class AloitaPeliJaTimer : MonoBehaviour
 
         if (timerScript != null) // jos pelin kesto scripti löytyy
         {
-            timerScript.KaynnistaAjastin();
+            timerScript.KaynnistaAjastin(); // käynnistetään ajastin
         }
         else
         {

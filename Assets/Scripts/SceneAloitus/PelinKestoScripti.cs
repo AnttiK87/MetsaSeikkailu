@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine; 
+using UnityEngine.SceneManagement; // tarvitaan scenejen vaihtamiseen
 
 
 public class PelinKestoScripti : MonoBehaviour // scripti joka laskee pelin keston
@@ -9,25 +9,57 @@ public class PelinKestoScripti : MonoBehaviour // scripti joka laskee pelin kest
     private float aloitusaika; // aloitusaika
     private float kulunutAika; // kulunut aika
     private bool ajastinKaynnissa = false; // onko ajastin k‰ynniss‰
+    private float vaaratVastaukset = 0; // v‰‰r‰t vastaukset laskuri
+    private float lopullinenAika = float.MaxValue; // lopullinen aika on max float, jotta se on varmasti suurempi kuin mik‰‰n mahdollinen aika
 
     void Awake() // ei tuhoa t‰t‰ scripti‰ kun vaihdetaan scene‰
     {
         DontDestroyOnLoad(gameObject);
-       // PlayerPrefs.DeleteKey("EnnatysAika"); // VƒLIAIKAINEN 
+        SceneManager.sceneLoaded += OnSceneLoaded; // lis‰t‰‰n listeneri, joka kutsuu OnSceneLoaded funktiota kun scene vaihtuu
     }
 
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) // kun scene vaihtuu
+    {
+        Debug.Log("Scene loaded"); // debuggausta varten
+    }
+
+
+    public void LisaaAikaa() // lis‰‰ aikaa
+    {
+        if (ajastinKaynnissa)
+        {
+            vaaratVastaukset += 5; // lis‰t‰‰n 5 sekunttia v‰‰r‰st‰ vastauksesta
+        }
+    }
+
+    IEnumerator TimerDebugCoroutine()
+    {
+        while (ajastinKaynnissa)
+        {
+            Debug.Log("Timerin aika on: " + Time.time + " Vaarat Vastaukset on: " + vaaratVastaukset);
+            yield return new WaitForSeconds(1f); // Odotetaan 1 sekunti ennen seuraavaa p‰ivityst‰
+        }
+    }
+
+    //timeriin liittyv‰t funktiot
     public void KaynnistaAjastin() // aloittaa ajastimen
     {
         aloitusaika = Time.time; // aloitusaika on aika jolloin peli aloitetaan
         ajastinKaynnissa = true; // ajastin on k‰ynniss‰
         Debug.Log("Timer started at: " + Time.time); // debuggausta varten
+
+        StartCoroutine(TimerDebugCoroutine()); // K‰ynnist‰ Coroutine
     }
 
     public void PysaytaAjastin() // pys‰ytt‰‰ ajastimen
     {
         kulunutAika = Time.time - aloitusaika; // kulunut aika on aika jolloin peli lopetetaan - aloitusaika
+        lopullinenAika = kulunutAika + vaaratVastaukset; // lopullinen aika on kulunut aika + v‰‰r‰t vastaukset
         ajastinKaynnissa = false; // ajastin ei ole k‰ynniss‰
         Debug.Log("Timer stopped at: " + Time.time); // debuggausta varten
+        Debug.Log("Lopullinen aika:" + lopullinenAika); // debuggausta varten
+
+        StopCoroutine(TimerDebugCoroutine()); // Lopeta Coroutine
     }
     public void NollaaAjastin()
     {
@@ -37,51 +69,25 @@ public class PelinKestoScripti : MonoBehaviour // scripti joka laskee pelin kest
         Debug.Log("Timer reset at: " + Time.time); // debuggausta varten
     }
 
-    void Update() // p‰ivitt‰‰ kuluneen ajan
-    {
-        if (ajastinKaynnissa) // jos ajastin on k‰ynniss‰
-        {
-            kulunutAika = Time.time - aloitusaika; // kulunut aika on nykyinen aika - aloitusaika
-        }
-    }
-
     public int HaeKuluneetMinuutit() //palauttaa kuluneet minuutit
     {
-        return (int)(kulunutAika / 60); // lasketaan kuluneet minuutit jakamalla kulunut sekunttiaika 60:ll‰
+        return (int)(lopullinenAika / 60); // lasketaan kuluneet minuutit jakamalla kulunut sekunttiaika 60:ll‰
     }
 
     public int HaeKuluneetSekunnit() // palauttaa kuluneet sekunnit
     {
-        return (int)(kulunutAika % 60); // lasketaan kuluneet sekunnit jakamalla kulunut sekunttiaika 60:ll‰ ja ottamalla jakoj‰‰nnˆs
+        return (int)(lopullinenAika % 60); // lasketaan kuluneet sekunnit jakamalla kulunut sekunttiaika 60:ll‰ ja ottamalla jakoj‰‰nnˆs
     }
 
     public void TarkistaJaTallennaEnnatysAika() // tarkistaa onko kulunut aika uusi enn‰tysaika ja tallentaa sen
     {
         float vanhaEnnatys = PlayerPrefs.GetFloat("EnnatysAika", float.MaxValue); // haetaan vanha enn‰tysaika
-        if (kulunutAika < vanhaEnnatys) // jos kulunut aika on pienempi kuin vanha enn‰tysaika
+        if (lopullinenAika < vanhaEnnatys) // jos kulunut aika on pienempi kuin vanha enn‰tysaika
         {
-            PlayerPrefs.SetFloat("EnnatysAika", kulunutAika); // tallennetaan uusi enn‰tysaika
+            PlayerPrefs.SetFloat("EnnatysAika", lopullinenAika); // tallennetaan uusi enn‰tysaika
             PlayerPrefs.Save(); // varmistetaan, ett‰ tieto tallennetaan v‰littˆm‰sti
         }
     }
-
-    public void VaaraVastausNappiaPainaessa(Button painettuNappi) // jos painetaan v‰‰r‰‰ vastausnappia, lis‰t‰‰n aikaa 5 sek timeriin
-    {
-        if (painettuNappi.CompareTag("VaaraVastaus"))
-        {
-            LisaaAikaa();
-        }
-    }
-
-    public void LisaaAikaa() // lis‰‰ aikaa
-    {
-        if (ajastinKaynnissa)
-        {
-            aloitusaika -= 5; // v‰hennet‰‰n 5 sekunttia aloitusajasta
-            Debug.Log("5 sekunttia lis‰tty timeriin"); // debuggausta varten
-        }
-    }
-
 
 }
 

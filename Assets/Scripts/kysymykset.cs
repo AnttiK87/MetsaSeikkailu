@@ -124,6 +124,14 @@ public class kysymykset : MonoBehaviour
         textKysymys1.SetActive(false);
         textKysymys2.SetActive(false);
         textVaarin.SetActive(true);
+
+        //kutsu pelinkestoscripti‰ ja lis‰‰ aikaa v‰‰r‰st‰ vastauksesta
+        PelinKestoScripti ajastin = FindObjectOfType<PelinKestoScripti>();
+        if (ajastin != null)
+        {
+            ajastin.LisaaAikaa();
+        }
+
     }
 
     //t‰m‰ metodi liitet‰‰n ekan ui n‰ytˆn ensimm‰isen kysymyksen oikea vastaus nappiin
