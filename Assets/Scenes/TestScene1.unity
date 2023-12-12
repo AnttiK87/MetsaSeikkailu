@@ -2514,6 +2514,7 @@ MonoBehaviour:
   nuoliSeuraavaScene: {fileID: 1923105399}
   kyselija: {fileID: 0}
   KyselijaPois: {fileID: 0}
+  TagatytObjektit: []
 --- !u!1 &698207433
 GameObject:
   m_ObjectHideFlags: 0
@@ -5038,12 +5039,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166072361}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6290026, y: 0.06408882, z: 0.5841732}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -400.2621, y: -224.9733, z: 0.2434031}
+  m_LocalScale: {x: 0.41666666, y: 0.41666666, z: 0.41666666}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1716739106}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1179105032
 GameObject:
@@ -7744,6 +7745,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689361157}
   m_CullTransparentMesh: 1
+--- !u!224 &1716739106 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3902402846471718342, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
+  m_PrefabInstance: {fileID: 396173022540957291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1729131129
 GameObject:
   m_ObjectHideFlags: 0
@@ -10431,7 +10437,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3902402846471718342, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1166072363}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
 --- !u!1660057539 &9223372036854775807
@@ -10441,7 +10450,6 @@ SceneRoots:
   - {fileID: 396173022540957291}
   - {fileID: 159755179}
   - {fileID: 1994142001}
-  - {fileID: 1166072363}
   - {fileID: 2058159510}
   - {fileID: 252546558}
   - {fileID: 363407513}

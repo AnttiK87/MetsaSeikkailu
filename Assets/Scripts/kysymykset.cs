@@ -140,6 +140,7 @@ public class kysymykset : MonoBehaviour
         textOikein.SetActive(true);
 
         GameObject suurennuslasi = GameObject.FindWithTag("SuurennusLasi");
+
         if (suurennuslasi != null)
         {
             suurennuslasi.SetActive(false);

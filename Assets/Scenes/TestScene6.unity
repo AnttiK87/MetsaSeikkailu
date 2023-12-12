@@ -2172,12 +2172,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127076112}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 953.0024, y: 538.90857, z: -0.18131995}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.9156747, y: -0.45476276, z: -0.07555008}
+  m_LocalScale: {x: 0.41666666, y: 0.41666666, z: 0.41666666}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2070011595}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1257423636
 GameObject:
@@ -3758,7 +3758,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c71348170a0bac040aff30b5066ddbc4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.75
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3850,12 +3850,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980272026}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 953.0024, y: 538.90857, z: -0.18131995}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.9156747, y: -0.45476276, z: -0.07555008}
+  m_LocalScale: {x: 0.41666666, y: 0.41666666, z: 0.41666666}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2070011595}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2024159210
 GameObject:
@@ -4019,12 +4019,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3902402846471718342, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1127076114}
+    - targetCorrespondingSourceObject: {fileID: 3902402846471718342, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1980272028}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
 --- !u!95 &2070011591 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5915661517643806067, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
+  m_PrefabInstance: {fileID: 2070011590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2070011595 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3902402846471718342, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
   m_PrefabInstance: {fileID: 2070011590}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
@@ -4034,8 +4045,6 @@ SceneRoots:
   - {fileID: 2070011590}
   - {fileID: 785669438}
   - {fileID: 1794529675}
-  - {fileID: 1127076114}
-  - {fileID: 1980272028}
   - {fileID: 1723103828}
   - {fileID: 1445094237}
   - {fileID: 1628852373}

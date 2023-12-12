@@ -6442,7 +6442,7 @@ GameObject:
   - component: {fileID: 1657544884}
   - component: {fileID: 1657544883}
   m_Layer: 0
-  m_Name: Audio Linnut
+  m_Name: AudioLinnut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6460,7 +6460,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d32b1a6051a542446a8e10e56f664dde, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6552,12 +6552,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657544882}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 953.0024, y: 538.90857, z: -0.18131995}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.9156747, y: -0.45476276, z: -0.07555008}
+  m_LocalScale: {x: 0.41666666, y: 0.41666666, z: 0.41666666}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1990162221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1719570219
 GameObject:
@@ -8131,9 +8131,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3902402846471718342, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1657544884}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
+--- !u!224 &1990162221 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3902402846471718342, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
+  m_PrefabInstance: {fileID: 1990162220}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2018671251
 GameObject:
   m_ObjectHideFlags: 0
@@ -8398,7 +8406,6 @@ SceneRoots:
   - {fileID: 1990162220}
   - {fileID: 444570385}
   - {fileID: 1244597230}
-  - {fileID: 1657544884}
   - {fileID: 75234196}
   - {fileID: 419998975}
   - {fileID: 401535948}

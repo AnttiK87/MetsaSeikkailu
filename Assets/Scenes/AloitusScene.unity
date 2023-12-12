@@ -704,7 +704,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b8e276b8a35040f43ad1284f812e633d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.8
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -796,12 +796,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747789073}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 650.8623, y: 632.23376, z: -1.6402271}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -128.80737, y: 38.430733, z: -0.6834284}
+  m_LocalScale: {x: 0.41666666, y: 0.41666666, z: 0.41666666}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1282110579}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &949328552
 GameObject:
@@ -1142,7 +1142,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 747789075}
   m_Father: {fileID: 437008797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1196,7 +1197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1369,6 +1370,7 @@ GameObject:
   - component: {fileID: 1606605584}
   - component: {fileID: 1606605583}
   - component: {fileID: 1606605586}
+  - component: {fileID: 1606605587}
   m_Layer: 5
   m_Name: AloitaPeliBtn
   m_TagString: Untagged
@@ -1503,6 +1505,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   haivytysEkaan: {fileID: 1282110578}
+  Haivytysaika: 3
+--- !u!114 &1606605587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606605581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a085b8811d8250d4d83622063327a07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objektiPois: {fileID: 0}
+  objektiPaalle: {fileID: 0}
+  Haivytys: {fileID: 0}
   Haivytysaika: 3
 --- !u!1 &1831496958
 GameObject:
@@ -1814,4 +1832,3 @@ SceneRoots:
   - {fileID: 704557772}
   - {fileID: 458664177}
   - {fileID: 1508816380}
-  - {fileID: 747789075}
