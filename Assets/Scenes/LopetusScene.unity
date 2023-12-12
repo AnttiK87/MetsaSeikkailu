@@ -1135,6 +1135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c9d1b9567a99c4f876ff2491c6c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Haivytys: {fileID: 1409770628}
+  Haivytysaika: 3
 --- !u!4 &948027941
 Transform:
   m_ObjectHideFlags: 0
@@ -1361,6 +1363,11 @@ CanvasRenderer:
 --- !u!224 &1409770627 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3902402846471718342, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
+  m_PrefabInstance: {fileID: 260372564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1409770628 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5915661517643806067, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
   m_PrefabInstance: {fileID: 260372564}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1699918633
