@@ -975,6 +975,7 @@ GameObject:
   - component: {fileID: 424223617}
   - component: {fileID: 424223620}
   - component: {fileID: 424223621}
+  - component: {fileID: 424223622}
   m_Layer: 0
   m_Name: TelkkaUinti (1)
   m_TagString: Untagged
@@ -1102,6 +1103,18 @@ MonoBehaviour:
   objektiPaalle: {fileID: 0}
   Haivytys: {fileID: 2070011591}
   Haivytysaika: 3
+--- !u!114 &424223622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424223616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b354620fcc8c645b26a251ae99bddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &608828455
 GameObject:
   m_ObjectHideFlags: 0
