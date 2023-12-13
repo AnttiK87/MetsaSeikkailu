@@ -2358,6 +2358,7 @@ GameObject:
   - component: {fileID: 687295236}
   - component: {fileID: 687295235}
   - component: {fileID: 687295237}
+  - component: {fileID: 687295238}
   m_Layer: 0
   m_Name: punarinta
   m_TagString: Kysymykset
@@ -2517,6 +2518,21 @@ MonoBehaviour:
   TagatytObjektit: []
   oikeinAani: {fileID: 976497762}
   vaarinAani: {fileID: 1091170926}
+--- !u!114 &687295238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687295230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704fd02923759764a8afdf72301c5c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &698207433
 GameObject:
   m_ObjectHideFlags: 0
@@ -6193,6 +6209,7 @@ GameObject:
   - component: {fileID: 1333401518}
   - component: {fileID: 1333401519}
   - component: {fileID: 1333401520}
+  - component: {fileID: 1333401521}
   m_Layer: 0
   m_Name: telkka1
   m_TagString: Untagged
@@ -6322,6 +6339,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1333401521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333401515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704fd02923759764a8afdf72301c5c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &1345305941
 GameObject:
   m_ObjectHideFlags: 0
@@ -8404,6 +8436,7 @@ GameObject:
   - component: {fileID: 1923105402}
   - component: {fileID: 1923105401}
   - component: {fileID: 1923105400}
+  - component: {fileID: 1923105404}
   m_Layer: 0
   m_Name: EteenpainNappi
   m_TagString: Untagged
@@ -8515,6 +8548,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 77.783, y: -53.499, z: 41.155}
+--- !u!114 &1923105404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923105399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704fd02923759764a8afdf72301c5c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &1923853230
 GameObject:
   m_ObjectHideFlags: 0
@@ -10689,7 +10737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4478559159774101294, guid: 36f835f7f1d97414f898d486ab20d734, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10711,6 +10759,7 @@ SceneRoots:
   - {fileID: 363407513}
   - {fileID: 758809077}
   - {fileID: 1333401517}
+  - {fileID: 1655365355}
   - {fileID: 687295234}
   - {fileID: 2125482897}
   - {fileID: 2057294906}
@@ -10726,7 +10775,6 @@ SceneRoots:
   - {fileID: 1923105403}
   - {fileID: 140062411}
   - {fileID: 793822366}
-  - {fileID: 1655365355}
   - {fileID: 1422628348}
   - {fileID: 426486229}
   - {fileID: 976497763}
