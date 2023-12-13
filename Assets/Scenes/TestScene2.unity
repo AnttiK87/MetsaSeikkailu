@@ -1427,7 +1427,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Kysymys 1.\nSudet sy\xF6v\xE4t p\xE4\xE4asiassa pikkulintuja. "
+  m_text: "Kysymys 1. Totta vai tarua:\nSudet sy\xF6v\xE4t p\xE4\xE4asiassa pikkulintuja. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
@@ -3257,7 +3257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SEURAAVA
+  m_text: Seuraava
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
@@ -3791,7 +3791,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "ETEENP\xC4IN"
+  m_text: Seuraava
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
@@ -7583,7 +7583,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: B. EI
+  m_text: B. Tarua
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
@@ -8461,7 +8461,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A. KYLL\xC4"
+  m_text: A. TOTTA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
