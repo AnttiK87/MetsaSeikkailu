@@ -11,6 +11,7 @@ public class Punarinta : MonoBehaviour
     //muuttujat avattavalle ui canvasille ja seuraavalle ui canvasille
     public GameObject panel;
     public GameObject newPanel;
+    public KursorinVaihto kursorinVaihto;
 
     //objekti johon scripti on liitetty toimii nappina
     //klikkaamalla kutsutaan metodia joka aktivoi halutun ui objektin
@@ -18,6 +19,7 @@ public class Punarinta : MonoBehaviour
     {
         //Debug.Log("nappia painettu");
         ActivateObject();
+        kursorinVaihto.DeaktivoiScript();
     }
 
     //metodi objektin aktivoinnille
@@ -26,6 +28,7 @@ public class Punarinta : MonoBehaviour
         if (!panel.activeSelf && panel != null)
         {
             panel.SetActive(true);
+            
         }
     }
 

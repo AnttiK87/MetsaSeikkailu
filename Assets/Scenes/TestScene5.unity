@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.40423936, g: 0.39555845, b: 0.36359546, a: 1}
+  m_IndirectSpecularColor: {r: 0.40423664, g: 0.39556015, b: 0.3635978, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 56301325}
   - component: {fileID: 56301326}
   - component: {fileID: 56301327}
+  - component: {fileID: 56301328}
   m_Layer: 0
   m_Name: EteenpainNappi
   m_TagString: Untagged
@@ -380,6 +381,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704fd02923759764a8afdf72301c5c6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectsToCheck: []
+--- !u!114 &56301328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56301322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
   cursorModeMuut: 0
   hotSpotMuut: {x: 0, y: 0}
@@ -497,6 +511,7 @@ GameObject:
   - component: {fileID: 82194101}
   - component: {fileID: 82194103}
   - component: {fileID: 82194104}
+  - component: {fileID: 82194105}
   m_Layer: 0
   m_Name: taustatonsieni
   m_TagString: Untagged
@@ -590,7 +605,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 19.68, y: 13.12, z: 0.2000246}
+  m_Size: {x: 4.3, y: 6.86, z: 0.2000246}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &82194104
 MonoBehaviour:
@@ -606,9 +621,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 1055022200}
   vinkkiAani: {fileID: 1726801477}
-  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  kursorinVaihto: {fileID: 284764207}
+--- !u!114 &82194105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82194100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &110320322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,6 +1217,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241281904}
   m_CullTransparentMesh: 1
+--- !u!1 &284764206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284764208}
+  - component: {fileID: 284764207}
+  m_Layer: 0
+  m_Name: KursorinVaihtaja
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &284764207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284764206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704fd02923759764a8afdf72301c5c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToCheck:
+  - {fileID: 511544833}
+  - {fileID: 1460538185}
+  - {fileID: 82194100}
+  - {fileID: 627509828}
+  - {fileID: 786072597}
+--- !u!4 &284764208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284764206}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -737.4413, y: 742.22986, z: 1135.004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &346409391
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,6 +2677,7 @@ GameObject:
   - component: {fileID: 511544838}
   - component: {fileID: 511544839}
   - component: {fileID: 511544840}
+  - component: {fileID: 511544841}
   m_Layer: 0
   m_Name: karhu
   m_TagString: Untagged
@@ -2718,6 +2797,7 @@ MonoBehaviour:
   vinkki4: {fileID: 1970519184}
   kyselija: {fileID: 0}
   kysymysManageri: {fileID: 1862998288}
+  kursorinVaihto: {fileID: 284764207}
 --- !u!95 &511544839
 Animator:
   serializedVersion: 5
@@ -2751,6 +2831,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704fd02923759764a8afdf72301c5c6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectsToCheck: []
+--- !u!114 &511544841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511544833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
   cursorModeMuut: 0
   hotSpotMuut: {x: 0, y: 0}
@@ -2766,6 +2859,7 @@ GameObject:
   - component: {fileID: 627509829}
   - component: {fileID: 627509831}
   - component: {fileID: 627509832}
+  - component: {fileID: 627509833}
   m_Layer: 0
   m_Name: taustatonsammal
   m_TagString: Untagged
@@ -2859,8 +2953,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 19.68, y: 13.12, z: 0.20002033}
-  m_Center: {x: 0, y: 0.0000009536743, z: 0}
+  m_Size: {x: 8.3, y: 10.6, z: 0.20002033}
+  m_Center: {x: -0.51, y: -0.4, z: 0}
 --- !u!114 &627509832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2875,9 +2969,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 1970519184}
   vinkkiAani: {fileID: 1726801477}
-  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  kursorinVaihto: {fileID: 284764207}
+--- !u!114 &627509833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627509828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &663745128
 GameObject:
   m_ObjectHideFlags: 0
@@ -3233,13 +3340,14 @@ GameObject:
   - component: {fileID: 786072598}
   - component: {fileID: 786072600}
   - component: {fileID: 786072601}
+  - component: {fileID: 786072602}
   m_Layer: 0
   m_Name: taustatonmustike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &786072598
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3326,8 +3434,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 19.680004, y: 13.120003, z: 0.20001096}
-  m_Center: {x: -0.0000010728836, y: 0, z: 0}
+  m_Size: {x: 14.16, y: 5.65, z: 0.20001096}
+  m_Center: {x: -0.28, y: 0.1, z: 0}
 --- !u!114 &786072601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3342,9 +3450,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 122307089}
   vinkkiAani: {fileID: 1726801477}
-  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  kursorinVaihto: {fileID: 284764207}
+--- !u!114 &786072602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786072597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &787009416
 GameObject:
   m_ObjectHideFlags: 0
@@ -5969,6 +6090,7 @@ GameObject:
   - component: {fileID: 1460538186}
   - component: {fileID: 1460538188}
   - component: {fileID: 1460538189}
+  - component: {fileID: 1460538190}
   m_Layer: 0
   m_Name: taustatonkanto
   m_TagString: Untagged
@@ -6062,8 +6184,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 19.68, y: 13.12, z: 0.19999999}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 6.83, y: 3.77, z: 0.19999999}
+  m_Center: {x: 0.03, y: 0.51, z: 0}
 --- !u!114 &1460538189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6078,9 +6200,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 449771415}
   vinkkiAani: {fileID: 1726801477}
-  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  kursorinVaihto: {fileID: 284764207}
+--- !u!114 &1460538190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460538185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &1497307276
 GameObject:
   m_ObjectHideFlags: 0
@@ -7948,6 +8083,7 @@ MonoBehaviour:
   nuoliSeuraavaScene: {fileID: 56301322}
   kysymysPaneeli: {fileID: 110320322}
   SuurennusLasi: {fileID: 1250947640}
+  kursorinVaihto: {fileID: 284764207}
   KysymysTxt: {fileID: 373737661}
 --- !u!4 &1862998289
 Transform:
@@ -8828,3 +8964,4 @@ SceneRoots:
   - {fileID: 358339575}
   - {fileID: 1455214382}
   - {fileID: 37144335}
+  - {fileID: 284764208}

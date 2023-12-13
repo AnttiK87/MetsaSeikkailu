@@ -4,18 +4,42 @@ using UnityEngine;
 
 public class KursorinVaihto : MonoBehaviour
 {
-    public Texture2D cursorTextureMuut;
-    public CursorMode cursorModeMuut = CursorMode.Auto;
-    public Vector2 hotSpotMuut = Vector2.zero;
 
-    void OnMouseEnter()
-    {
-        Cursor.SetCursor(cursorTextureMuut, hotSpotMuut, cursorModeMuut);
+    public GameObject[] objectsToCheck;
+
+    public void AktivoiScript()
+        {
+        foreach (var obj in objectsToCheck)
+        {
+            if (obj != null)
+            {
+                // Disable the BoxCollider component if it exists
+                BoxCollider boxCollider = obj.GetComponent<BoxCollider>();
+                if (boxCollider != null)
+                {
+                    boxCollider.enabled = true;
+                }
+            }
+        }
     }
 
-    void OnMouseExit()
+
+    public void DeaktivoiScript()
     {
-        // Pass 'null' to the texture parameter to use the default system cursor.
-        Cursor.SetCursor(null, Vector2.zero, cursorModeMuut);
+
+        foreach (var obj in objectsToCheck)
+        {
+            if (obj != null)
+            {
+                // Disable the BoxCollider component if it exists
+                BoxCollider boxCollider = obj.GetComponent<BoxCollider>();
+                if (boxCollider != null)
+                {
+                    boxCollider.enabled = false;
+                }
+            }
+        }
+
+
     }
 }

@@ -23,6 +23,7 @@ public class KysymysManageri : MonoBehaviour
     public GameObject nuoliSeuraavaScene;
     public GameObject kysymysPaneeli;
     public GameObject SuurennusLasi;
+    public KursorinVaihto kursorinVaihto;
 
     public Text KysymysTxt;
 
@@ -116,6 +117,7 @@ public class KysymysManageri : MonoBehaviour
 
         //Avataan nuoli jolla p‰‰see seuraavaan sceneen
         nuoliSeuraavaScene.SetActive(true);
+        kursorinVaihto.AktivoiScript();
     }
 
     public void ValitseVastaus(int vastausNumero)

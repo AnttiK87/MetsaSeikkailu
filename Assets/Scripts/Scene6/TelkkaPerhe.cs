@@ -13,6 +13,7 @@ public class TelkkaPerhe : MonoBehaviour
     public GameObject telkkaPerhePois;
     public GameObject telkkaPerhe;
     public GameObject punarintaAktivointi;
+    public KursorinVaihto kursorinVaihto;
 
     private int counter = 0;
 
@@ -35,6 +36,7 @@ public class TelkkaPerhe : MonoBehaviour
         if (!panel.activeSelf && panel != null)
         {
             panel.SetActive(true);
+            kursorinVaihto.DeaktivoiScript();
         }
     }
 
@@ -53,5 +55,6 @@ public class TelkkaPerhe : MonoBehaviour
         telkka1.SetActive(false);
         telkka2.SetActive(true);
         telkkaUinti.SetActive(true);
+        kursorinVaihto.AktivoiScript();
     }
 }

@@ -18,7 +18,7 @@ public class VideoPlay : MonoBehaviour
     public GameObject rawImageVideo2;
     public GameObject telkka;
     private float delayInSeconds = 0.1f;
-
+    public KursorinVaihto kursorinVaihto;
 
     //Scripti liitetty telkänpönttöön ja tällä pontto saadaan toimimaan nappina.
     //Vaatii toimiakseen objektille boxcollider komponentin.
@@ -42,6 +42,7 @@ public class VideoPlay : MonoBehaviour
         if (panel != null)
         {
             panel.SetActive(true);
+            kursorinVaihto.DeaktivoiScript();
         }
     }
 
@@ -58,6 +59,7 @@ public class VideoPlay : MonoBehaviour
         rawImageVideo1.SetActive(false);
         rawImageVideo2.SetActive(true);
         videoPlayer2.Play();
+        kursorinVaihto.AktivoiScript();
         videoPlayer2.loopPointReached += VideoPlaybackComplete2;
     }
 
@@ -76,6 +78,7 @@ public class VideoPlay : MonoBehaviour
         panel.SetActive(false); //ui canvas kiinni
         telkka.SetActive(true); //peli hahmo näyttämölle
         Destroy(panel); //ui paneeli joutaa pois
+        
     }
 
     //Tällä metodilla alku animaation ensimmäinen ruutu saadaan näkyviin kun linnunpönttöä klikataan

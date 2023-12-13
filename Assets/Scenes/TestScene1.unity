@@ -2359,8 +2359,8 @@ GameObject:
   - component: {fileID: 687295236}
   - component: {fileID: 687295235}
   - component: {fileID: 687295237}
-  - component: {fileID: 687295238}
   - component: {fileID: 687295239}
+  - component: {fileID: 687295240}
   m_Layer: 0
   m_Name: punarinta
   m_TagString: Kysymykset
@@ -2491,6 +2491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 1635830955}
   newPanel: {fileID: 17178894}
+  kursorinVaihto: {fileID: 1434206671}
 --- !u!114 &687295237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2520,21 +2521,7 @@ MonoBehaviour:
   TagatytObjektit: []
   oikeinAani: {fileID: 976497762}
   vaarinAani: {fileID: 1091170926}
---- !u!114 &687295238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687295230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 704fd02923759764a8afdf72301c5c6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
-  cursorModeMuut: 0
-  hotSpotMuut: {x: 0, y: 0}
+  kursorinVaihto: {fileID: 1434206671}
 --- !u!82 &687295239
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2631,6 +2618,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &687295240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687295230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &698207433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3835,6 +3837,7 @@ GameObject:
   - component: {fileID: 923177534}
   - component: {fileID: 923177537}
   - component: {fileID: 923177538}
+  - component: {fileID: 923177539}
   m_Layer: 0
   m_Name: kapytikka
   m_TagString: Untagged
@@ -3944,9 +3947,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 2019008917}
   vinkkiAani: {fileID: 426486228}
-  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  kursorinVaihto: {fileID: 1434206671}
+--- !u!114 &923177539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923177533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &931306995
 GameObject:
   m_ObjectHideFlags: 0
@@ -6308,8 +6324,8 @@ GameObject:
   - component: {fileID: 1333401518}
   - component: {fileID: 1333401519}
   - component: {fileID: 1333401520}
-  - component: {fileID: 1333401521}
   - component: {fileID: 1333401522}
+  - component: {fileID: 1333401523}
   m_Layer: 0
   m_Name: telkka1
   m_TagString: Untagged
@@ -6439,21 +6455,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1333401521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333401515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 704fd02923759764a8afdf72301c5c6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
-  cursorModeMuut: 0
-  hotSpotMuut: {x: 0, y: 0}
 --- !u!82 &1333401522
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6550,6 +6551,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1333401523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333401515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &1345305941
 GameObject:
   m_ObjectHideFlags: 0
@@ -7013,6 +7029,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1434206670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1434206672}
+  - component: {fileID: 1434206671}
+  m_Layer: 0
+  m_Name: Kursorinvaihtaja
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1434206671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434206670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704fd02923759764a8afdf72301c5c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToCheck:
+  - {fileID: 2125482895}
+  - {fileID: 2057294904}
+  - {fileID: 1333401515}
+  - {fileID: 687295230}
+  - {fileID: 1570093761}
+  - {fileID: 923177533}
+  - {fileID: 1923105399}
+--- !u!4 &1434206672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434206670}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -737.4413, y: 742.22986, z: 1135.004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1441843304
 GameObject:
   m_ObjectHideFlags: 0
@@ -7406,6 +7474,7 @@ GameObject:
   - component: {fileID: 1570093762}
   - component: {fileID: 1570093765}
   - component: {fileID: 1570093767}
+  - component: {fileID: 1570093768}
   m_Layer: 0
   m_Name: kivi
   m_TagString: Untagged
@@ -7515,9 +7584,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 1818856136}
   vinkkiAani: {fileID: 426486228}
-  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  kursorinVaihto: {fileID: 1434206671}
+--- !u!114 &1570093768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570093761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &1579012153
 GameObject:
   m_ObjectHideFlags: 0
@@ -8619,7 +8701,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1923105399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 704fd02923759764a8afdf72301c5c6b, type: 3}
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
@@ -9772,6 +9854,7 @@ GameObject:
   - component: {fileID: 2057294905}
   - component: {fileID: 2057294908}
   - component: {fileID: 2057294909}
+  - component: {fileID: 2057294910}
   m_Layer: 0
   m_Name: puska
   m_TagString: Untagged
@@ -9881,9 +9964,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 639166696}
   vinkkiAani: {fileID: 426486228}
-  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  kursorinVaihto: {fileID: 1434206671}
+--- !u!114 &2057294910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057294904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &2058159506
 GameObject:
   m_ObjectHideFlags: 0
@@ -10406,6 +10502,7 @@ GameObject:
   - component: {fileID: 2125482899}
   - component: {fileID: 2125482900}
   - component: {fileID: 2125482902}
+  - component: {fileID: 2125482903}
   m_Layer: 0
   m_Name: pontto
   m_TagString: Untagged
@@ -10521,6 +10618,7 @@ MonoBehaviour:
   rawImageVideo1: {fileID: 260266915}
   rawImageVideo2: {fileID: 2129734378}
   telkka: {fileID: 1333401515}
+  kursorinVaihto: {fileID: 1434206671}
 --- !u!114 &2125482902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10535,9 +10633,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 795935851}
   vinkkiAani: {fileID: 426486228}
-  cursorTexture: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  kursorinVaihto: {fileID: 1434206671}
+--- !u!114 &2125482903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125482895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5218c19f32b43345a39bf776da53e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureMuut: {fileID: 2800000, guid: a646e3cad59d43c46982ff9448ce7e25, type: 3}
+  cursorModeMuut: 0
+  hotSpotMuut: {x: 0, y: 0}
 --- !u!1 &2129734378
 GameObject:
   m_ObjectHideFlags: 0
@@ -10841,3 +10952,4 @@ SceneRoots:
   - {fileID: 426486229}
   - {fileID: 976497763}
   - {fileID: 1091170927}
+  - {fileID: 1434206672}

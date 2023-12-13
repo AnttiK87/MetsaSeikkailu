@@ -7,11 +7,8 @@ public class AvaaJaSulje : MonoBehaviour
 
     public GameObject VinkkiCanvas;
     public AudioSource vinkkiAani;
-    public Texture2D cursorTexture;
-    public CursorMode cursorMode = CursorMode.Auto;
-    public Vector2 hotSpot = Vector2.zero;
     private string klikattu;
-
+    public KursorinVaihto kursorinVaihto;
 
     public void Start()
     {
@@ -21,16 +18,6 @@ public class AvaaJaSulje : MonoBehaviour
         }
     }
 
-    void OnMouseEnter()
-    {
-        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
-    }
-
-    void OnMouseExit()
-    {
-        // Pass 'null' to the texture parameter to use the default system cursor.
-        Cursor.SetCursor(null, Vector2.zero, cursorMode);
-    }
     private void OnMouseUpAsButton()
     {
         // M‰‰ritet‰‰n klikattiinko objektia ja mik‰ se oli
@@ -61,7 +48,8 @@ public class AvaaJaSulje : MonoBehaviour
             {
                 VinkkiCanvas.SetActive(true);
                 vinkkiAani.Play();
-            }
+                kursorinVaihto.DeaktivoiScript();
+        }
  
    
     }
@@ -69,5 +57,7 @@ public class AvaaJaSulje : MonoBehaviour
     public void suljeVinkki1()
     {
         VinkkiCanvas.SetActive(false);
+        kursorinVaihto.AktivoiScript();
+
     }
 }

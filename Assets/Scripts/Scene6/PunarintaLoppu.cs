@@ -9,11 +9,13 @@ public class PunarintaLoppu : MonoBehaviour
     public GameObject loppuTelkka;
     public GameObject loppuTelkkaTeksti;
     public Animator Lopetus;
+    public KursorinVaihto kursorinVaihto;
 
 
     public void TekstiAuki()
     {
         AvattavaUi.SetActive(true);
+        kursorinVaihto.DeaktivoiScript();
     }
 
     public void LoppuTelkka()

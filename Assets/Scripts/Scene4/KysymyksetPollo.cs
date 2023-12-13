@@ -20,6 +20,9 @@ public class KysymyksetPollo : MonoBehaviour
     public GameObject kyselija;
     public KysymysManageri kysymysManageri;
     private List<GameObject> TagattavatObjektit = new List<GameObject>();
+    public KursorinVaihto kursorinVaihto;
+
+
 
     //laskuri, ett‰ ensimm‰inen ui ruutu n‰ytet‰‰n vain ensimm‰isell‰ kertaa
     private int counter = 0;
@@ -52,6 +55,8 @@ public class KysymyksetPollo : MonoBehaviour
         //jos aloitusteksti on jo n‰hty n‰ytet‰‰n suoraan kysymykset
         else if (panel1 == null && kysymysManageri != null)
         {
+            kursorinVaihto.DeaktivoiScript();
+
             if (vinkki4 == null)
             {
                 if (!vinkki1.activeSelf && !vinkki2.activeSelf && !vinkki3.activeSelf)
@@ -75,7 +80,6 @@ public class KysymyksetPollo : MonoBehaviour
                     kysymysManageri.AktivoiTietoVisaCanvas();
                 }        
             }
-            
         }
     }
 
@@ -85,6 +89,7 @@ public class KysymyksetPollo : MonoBehaviour
         if (panel1 != null)
         {
             panel1.SetActive(true);
+            kursorinVaihto.DeaktivoiScript();
         }
     }
  
@@ -116,6 +121,7 @@ public class KysymyksetPollo : MonoBehaviour
                 obj.tag = "Vinkkaaja";
             }
         }
+        kursorinVaihto.AktivoiScript();
     }
 }
 

@@ -25,6 +25,7 @@ public class kysymykset : MonoBehaviour
     public GameObject[] TagatytObjektit;
     public AudioSource oikeinAani;
     public AudioSource vaarinAani;
+    public KursorinVaihto kursorinVaihto;
 
     //laskuri, että ensimmäinen ui ruutu näytetään vain ensimmäisellä kertaa
     private int counter = 0;
@@ -66,6 +67,7 @@ public class kysymykset : MonoBehaviour
         if (panel1 != null)
         {
             panel1.SetActive(true);
+            kursorinVaihto.DeaktivoiScript();
         }
     }
 
@@ -74,6 +76,7 @@ public class kysymykset : MonoBehaviour
     {
         if (!panel2.activeSelf && panel2 != null && !GameObject.FindWithTag("Vinkki"))
         {
+            kursorinVaihto.DeaktivoiScript();
 
             //Varmistetaan, että vinkkejä antavat objektit ovat aktiivisina
             objekti1.SetActive(true);
@@ -118,6 +121,7 @@ public class kysymykset : MonoBehaviour
                 obj.tag = "Vinkkaaja";
             }
         }
+        kursorinVaihto.AktivoiScript();
     }
 
     ////tämä metodi liitetään ekan ui näytön väärä vastaus nappeihin
@@ -172,7 +176,9 @@ public class kysymykset : MonoBehaviour
         {
             KyselijaPois.SetTrigger("PoisSusi"); //kyselijä poistuu näyttämöltä tarvittaessa
         }
-        
- 
+
+        kursorinVaihto.AktivoiScript();
+
+
     }
 }
