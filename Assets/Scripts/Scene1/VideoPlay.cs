@@ -24,9 +24,12 @@ public class VideoPlay : MonoBehaviour
     //Vaatii toimiakseen objektille boxcollider komponentin.
     private void OnMouseUpAsButton()
     {
-        //Debug.Log("nappia painettu");
-        videoPlayer1.Prepare();
-        LoadFirstFrame();
+        if (videoPlayer1 != null)
+        {
+            //Debug.Log("nappia painettu");
+            videoPlayer1.Prepare();
+            LoadFirstFrame();
+        }
 
         Invoke("ActivateObject", delayInSeconds);
         

@@ -1145,11 +1145,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "P\xE4\xE4set etenem\xE4\xE4n peliss\xE4 vastaamalla oikein mets\xE4n el\xE4inten
-    esitt\xE4miin kysymyksiin. Jos et ole varma vastauksesta, tutki ymp\xE4r\xF6iv\xE4\xE4
-    luontoa l\xF6yt\xE4\xE4ksesi vihjeit\xE4, jotka auttavat sinua l\xF6yt\xE4m\xE4\xE4n
-    oikean vastauksen. V\xE4\xE4rist\xE4 vastauksista seikkailun kesto kasvaa aina
-    5 sekunttia."
+  m_text: "P\xE4\xE4set etenem\xE4\xE4n peliss\xE4 vastaamalla oikein mets\xE4nel\xE4inten
+    esitt\xE4miin kysymyksiin. Jos et ole varma vastauksesta, etsi ymp\xE4r\xF6iv\xE4st\xE4
+    luonnosta vihjeit\xE4, jotka auttavat sinua l\xF6yt\xE4m\xE4\xE4n oikean vastauksen.
+    V\xE4\xE4rist\xE4 vastauksista seikkailun kesto kasvaa aina 5 sekunttia."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
