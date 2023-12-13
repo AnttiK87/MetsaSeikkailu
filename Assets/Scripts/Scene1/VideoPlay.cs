@@ -17,13 +17,19 @@ public class VideoPlay : MonoBehaviour
     public GameObject rawImageVideo1;
     public GameObject rawImageVideo2;
     public GameObject telkka;
+    private float delayInSeconds = 0.1f;
+
 
     //Scripti liitetty telkänpönttöön ja tällä pontto saadaan toimimaan nappina.
     //Vaatii toimiakseen objektille boxcollider komponentin.
     private void OnMouseUpAsButton()
     {
         //Debug.Log("nappia painettu");
-        ActivateObject();
+        videoPlayer1.Prepare();
+        LoadFirstFrame();
+
+        Invoke("ActivateObject", delayInSeconds);
+        
     }
 
     //Avataan ui paneeli jossa video näytetään ja valmistellaan video
@@ -31,9 +37,6 @@ public class VideoPlay : MonoBehaviour
     {
         if (panel != null)
         {
-            
-            videoPlayer1.Prepare();
-            LoadFirstFrame();
             panel.SetActive(true);
         }
     }
@@ -70,7 +73,6 @@ public class VideoPlay : MonoBehaviour
         Destroy(panel); //ui paneeli joutaa pois
     }
 
-
     private void LoadFirstFrame()
     {
         // Seek to the beginning of the video
@@ -80,4 +82,5 @@ public class VideoPlay : MonoBehaviour
         videoPlayer1.Play();
         videoPlayer1.Pause();
     }
+
 }

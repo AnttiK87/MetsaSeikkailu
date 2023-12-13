@@ -10414,6 +10414,8 @@ MonoBehaviour:
   rawImageVideo1: {fileID: 260266915}
   rawImageVideo2: {fileID: 2129734378}
   telkka: {fileID: 1333401515}
+  renderTexture: {fileID: 8400000, guid: 6880655380e89c641a7a1c2bdacd23d9, type: 2}
+  renderTextureEmpty: {fileID: 8400000, guid: 6267703936a383a47b1a9e6dcf04b30d, type: 2}
 --- !u!114 &2125482902
 MonoBehaviour:
   m_ObjectHideFlags: 0
