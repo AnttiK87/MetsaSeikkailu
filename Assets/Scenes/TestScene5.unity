@@ -7527,8 +7527,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hmh.. kuka siell\xE4 hiippailee minun mets\xE4ss\xE4ni ja viel\xE4 telk\xE4n
-    poikanen mukana? Min\xE4 olen t\xE4m\xE4n mets\xE4n kuningas ja minun on varmistettava,
+  m_text: "Hmh.. kuka siell\xE4 hiippailee minun mets\xE4ss\xE4ni ja viel\xE4 telk\xE4npoikanen
+    mukana? Min\xE4 olen t\xE4m\xE4n mets\xE4n kuningas ja minun on varmistettava,
     ettei t\xE4nne eksy ket\xE4\xE4n, joka ei kuulu t\xE4nne. Vastaapa kysymyksiini,
     niin n\xE4en, oletko sin\xE4 ja pieni yst\xE4v\xE4si tervetulleita valtakuntaani. "
   m_isRightToLeft: 0

@@ -3641,7 +3641,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Hei Seikkailija! \nMik\xE4s se sinulla siin\xE4 on? Pieni telk\xE4npoikanen!
     N\xE4ytt\xE4\xE4 oikein herkulliselta suupalalta! Jos vastaat v\xE4\xE4rin kysymyksiini
-    pikkuisen voi k\xE4yd\xE4 kalpaten! "
+    pikkuiselle voi k\xE4yd\xE4 kalpaten! "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}

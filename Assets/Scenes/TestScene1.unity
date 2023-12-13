@@ -5567,7 +5567,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Voi ei! Pieni telk\xE4n poikanen on j\xE4\xE4nyt j\xE4lkeen perheest\xE4\xE4n!
+  m_text: "Voi ei! Pieni telk\xE4npoikanen on j\xE4\xE4nyt j\xE4lkeen perheest\xE4\xE4n!
     \n\nHei sin\xE4 seikkailija siell\xE4! \n\nVoitko auttaa poikasen j\xE4rven rantaan? "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}

@@ -329,9 +329,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hurraa! Olet tehnyt sen, seikkailija! Olet saattanut pienen telk\xE4n
-    poikasen turvallisesti j\xE4rvelle, miss\xE4 se voi jatkaa el\xE4m\xE4\xE4ns\xE4
-    veden \xE4\xE4rell\xE4. \n\nOlet osoittanut suurta huolenpitoa ja ymm\xE4rryst\xE4
+  m_text: "Hurraa! Olet tehnyt sen, seikkailija! Olet saattanut pienen telk\xE4npoikasen
+    turvallisesti j\xE4rvelle, miss\xE4 se voi jatkaa el\xE4m\xE4\xE4ns\xE4 veden
+    \xE4\xE4rell\xE4. \n\nOlet osoittanut suurta huolenpitoa ja ymm\xE4rryst\xE4
     mets\xE4n el\xE4m\xE4st\xE4. Mets\xE4n asukkaat ja min\xE4 olemme syv\xE4sti
     kiitollisia teostasi. \n\nMuista aina, ett\xE4 mets\xE4ss\xE4 on paikka niille,
     jotka kunnioittavat sen el\xE4m\xE4\xE4 ja tasapainoa. Ole ylpe\xE4 itsest\xE4si
@@ -2708,7 +2708,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1500, y: 200}
+  m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1397136725
 MonoBehaviour:
@@ -2730,7 +2730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Upeaa! Viimeinkin telkk\xE4 \nemo ja muut poikaset l\xF6ytyiv\xE4t!"
+  m_text: "Upeaa! Viimeinkin telkk\xE4emo \nja muut poikaset l\xF6ytyiv\xE4t!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
   m_sharedMaterial: {fileID: -5918962774582822835, guid: 8753807ab26fbef4ab0c58e18c09124d, type: 2}
@@ -3317,7 +3317,7 @@ GameObject:
   - component: {fileID: 1735568036}
   - component: {fileID: 1735568035}
   m_Layer: 5
-  m_Name: TextPunarinta
+  m_Name: TextTelkka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
