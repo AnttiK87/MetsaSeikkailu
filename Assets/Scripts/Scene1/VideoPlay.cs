@@ -24,13 +24,14 @@ public class VideoPlay : MonoBehaviour
     //Vaatii toimiakseen objektille boxcollider komponentin.
     private void OnMouseUpAsButton()
     {
-        if (videoPlayer1 != null)
+        if (panel != null)
         {
             //Debug.Log("nappia painettu");
             videoPlayer1.Prepare();
-            LoadFirstFrame();
+            LoadFirstFrame(); //Saadaan ensimmäinen ruutu näkyviin
         }
 
+        //Viive aktivoinille, että texturessa oleva kuva ehtii vaihtua ennen näyttämistä
         Invoke("ActivateObject", delayInSeconds);
         
     }
@@ -63,10 +64,10 @@ public class VideoPlay : MonoBehaviour
     //metodi videon joka kutsutaan kun ensimmäinen video on lopussa
     void VideoPlaybackComplete(VideoPlayer vp)
     {
-        button1.SetActive(false);
-        button2.SetActive(true);
-        videoPlayer2.Prepare();
-        LoadFirstFrame2();
+            button1.SetActive(false);
+            button2.SetActive(true);
+            videoPlayer2.Prepare();
+            LoadFirstFrame2();
     }
 
     //metodi videon joka kutsutaan kun toinen video on lopussa
@@ -77,22 +78,20 @@ public class VideoPlay : MonoBehaviour
         Destroy(panel); //ui paneeli joutaa pois
     }
 
+    //Tällä metodilla alku animaation ensimmäinen ruutu saadaan näkyviin kun linnunpönttöä klikataan
     private void LoadFirstFrame()
     {
-        // Seek to the beginning of the video
         videoPlayer1.frame = 0;
 
-        // Play a single frame to load it into the RenderTexture
         videoPlayer1.Play();
         videoPlayer1.Pause();
     }
 
+    //Seuraava video latautuu ehkä siitimmin näin???
     private void LoadFirstFrame2()
     {
-        // Seek to the beginning of the video
         videoPlayer2.frame = 0;
 
-        // Play a single frame to load it into the RenderTexture
         videoPlayer2.Play();
         videoPlayer2.Pause();
     }
