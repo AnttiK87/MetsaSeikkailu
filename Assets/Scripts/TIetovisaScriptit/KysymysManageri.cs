@@ -22,8 +22,19 @@ public class KysymysManageri : MonoBehaviour
     public AudioSource vaarinAani;
     public GameObject nuoliSeuraavaScene;
     public GameObject kysymysPaneeli;
+    public GameObject SuurennusLasi;
 
     public Text KysymysTxt;
+
+    public static KysymysManageri kysymysManageri { get; private set; }
+    private void Awake()
+    {
+        if (kysymysManageri == null)
+        {
+            kysymysManageri = this;
+            // Additional initialization code if needed
+        }
+    }
 
     private void Start()
     {
@@ -56,6 +67,8 @@ public class KysymysManageri : MonoBehaviour
         if (TietoVisaCanvas != null)
         {
             TietoVisaCanvas.SetActive(true);
+            kysymysPaneeli.SetActive(true);
+            Vaarintxt.SetActive(false);
 
             // Tarkista, ovatko kaikki vastaukset oikein
             if (KaikkiVastauksetOikein())
@@ -99,7 +112,7 @@ public class KysymysManageri : MonoBehaviour
     public void SiirrySeuraavaanSceneen()
     {
         TietoVisaCanvas.SetActive(false);
-        //Destroy(TietoVisaCanvas); //kysymys paneelit tuhotaan
+        Destroy(TietoVisaCanvas); //kysymys paneelit tuhotaan
 
         //Avataan nuoli jolla p‰‰see seuraavaan sceneen
         nuoliSeuraavaScene.SetActive(true);
@@ -145,6 +158,7 @@ public class KysymysManageri : MonoBehaviour
         {
             // V‰‰r‰ vastaus
             Vaarintxt.SetActive(true);
+            kysymysPaneeli.SetActive(false);
 
             //kutsu pelinkestoscripti‰ ja lis‰‰ aikaa v‰‰r‰st‰ vastauksesta
             PelinKestoScripti ajastin = FindObjectOfType<PelinKestoScripti>();
@@ -157,14 +171,14 @@ public class KysymysManageri : MonoBehaviour
             vaarinAani.Play();
         }
         // Varmista, ett‰ Vaarintxt on poissa p‰‰lt‰, vaikka virheilmoituksessa olisi ongelma
-        StartCoroutine(SuljeVaarintxt());
+       // StartCoroutine(SuljeVaarintxt());
     
 }
-    private IEnumerator SuljeVaarintxt()
-    {
-        yield return new WaitForSeconds(2f);  // Voit muuttaa odotusaikaa tarpeen mukaan
-        Vaarintxt.SetActive(false);
-    }
+    //private IEnumerator SuljeVaarintxt()
+    //{
+    //    yield return new WaitForSeconds(2f);  // Voit muuttaa odotusaikaa tarpeen mukaan
+    //    Vaarintxt.SetActive(false);
+    //}
     private void TarkistaVoitto()
     {
         Debug.Log("TarkistaVoitto, oikeatVastauksetLaskuri: " + oikeatVastauksetLaskuri);
@@ -177,6 +191,7 @@ public class KysymysManageri : MonoBehaviour
                 seuraavaSceneNappi.SetActive(true);
                 seuraavaSceneNappi2.SetActive(true);
                 kysymysPaneeli.SetActive(false);
+                SuurennusLasi.SetActive(false);
             }
         }
         else
