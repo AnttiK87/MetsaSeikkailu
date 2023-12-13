@@ -63,6 +63,7 @@ public class VideoPlay : MonoBehaviour
         button1.SetActive(false);
         button2.SetActive(true);
         videoPlayer2.Prepare();
+        LoadFirstFrame2();
     }
 
     //metodi videon joka kutsutaan kun toinen video on lopussa
@@ -83,4 +84,13 @@ public class VideoPlay : MonoBehaviour
         videoPlayer1.Pause();
     }
 
+    private void LoadFirstFrame2()
+    {
+        // Seek to the beginning of the video
+        videoPlayer2.frame = 0;
+
+        // Play a single frame to load it into the RenderTexture
+        videoPlayer2.Play();
+        videoPlayer2.Pause();
+    }
 }
