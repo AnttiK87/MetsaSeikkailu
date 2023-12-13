@@ -31,7 +31,9 @@ public class VideoPlay : MonoBehaviour
     {
         if (panel != null)
         {
+            
             videoPlayer1.Prepare();
+            LoadFirstFrame();
             panel.SetActive(true);
         }
     }
@@ -66,5 +68,16 @@ public class VideoPlay : MonoBehaviour
         panel.SetActive(false); //ui canvas kiinni
         telkka.SetActive(true); //peli hahmo näyttämölle
         Destroy(panel); //ui paneeli joutaa pois
+    }
+
+
+    private void LoadFirstFrame()
+    {
+        // Seek to the beginning of the video
+        videoPlayer1.frame = 0;
+
+        // Play a single frame to load it into the RenderTexture
+        videoPlayer1.Play();
+        videoPlayer1.Pause();
     }
 }
