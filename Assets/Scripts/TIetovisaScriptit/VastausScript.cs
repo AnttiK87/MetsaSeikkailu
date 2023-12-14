@@ -18,10 +18,11 @@ public class VastausScript : MonoBehaviour
 
     public void Vastaus()
     {
+        // Tarkistetaan, onko vastaus oikein
         if (onOikein)
         {
             Debug.Log("Oikea vastaus");
-            kysymysManageri.oikein();
+            kysymysManageri.oikein();// Kutsutaan KysymysManagerin oikein-metodia
         }
         else
         {
@@ -34,6 +35,6 @@ public class VastausScript : MonoBehaviour
     public void vaarin()
     {
         Debug.Log("V‰‰r‰ vastaus k‰sitelty");
-        // T‰h‰n voit lis‰t‰ tarvittavat toiminnot v‰‰r‰lle vastaukselle
+        // Tarkistus v‰‰r‰lle vastaukselle
     }
 }

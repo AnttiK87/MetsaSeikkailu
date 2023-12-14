@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 
 public class KysymysManageri : MonoBehaviour
 {
+    // Julkiset muuttujat, jotka n‰kyv‰t Inspectorissa
     public List<KysymyksetVastaukset> QnA;
     public GameObject[] vaihtoehdot;
     public int nykyinenKysymys;
@@ -29,7 +30,7 @@ public class KysymysManageri : MonoBehaviour
 
     private void Start()
     {
-        
+        // Alustetaan muuttujat ja kutsutaan kysymysten luontifunktiota
         oikeatVastauksetLaskuri = 0;
         LuoKysymys();
 
@@ -54,7 +55,7 @@ public class KysymysManageri : MonoBehaviour
     }
 
     public void AktivoiTietoVisaCanvas()
-    {
+    {// Aktivoidaan TietoVisaCanvas ja tarkistetaan vastausten tila
         if (TietoVisaCanvas != null)
         {
             TietoVisaCanvas.SetActive(true);
@@ -88,7 +89,7 @@ public class KysymysManageri : MonoBehaviour
             // K‰y l‰pi kaikki kysymykset ja tarkista vastaukset
             for (int i = 0; i < kysymys.Vastaukset.Length; i++)
             {
-                // Voit esimerkiksi k‰ytt‰‰ VastausScript-luokan onOikein-muuttujaa tarkistukseen
+                // K‰ytet‰‰n on onOikein muuttujaa tarkistukseen
                 if (!vaihtoehdot[i].GetComponent<VastausScript>().onOikein)
                 {
                     // Jos edes yksi vastaus on v‰‰rin, palautetaan false
@@ -112,7 +113,7 @@ public class KysymysManageri : MonoBehaviour
 
     public void ValitseVastaus(int vastausNumero)
     {
-
+        // Valittu vastaus tallennetaan ja kutsutaan oikein-metodia
         valittuVastaus = vastausNumero;
         Debug.Log("Valittu vastaus: " + valittuVastaus);
 
@@ -122,7 +123,7 @@ public class KysymysManageri : MonoBehaviour
 }
 
     public void oikein()
-    {
+    {// Tarkista onko vastaus oikein ja p‰ivit‰ pelitila sen mukaan
         Debug.Log("Oikein-metodi kutsuttu");
         if (QnA[nykyinenKysymys].OikeaVastaus == valittuVastaus)
         {
@@ -132,10 +133,10 @@ public class KysymysManageri : MonoBehaviour
             if (QnA.Count > 0)
             {
                 Vaarintxt.SetActive(false);
-                // P√§ivit√§ nykyinenKysymys uudelleen
+                // p‰ivit‰ nykyinenKysymys uudelleen
                 nykyinenKysymys = Random.Range(0, QnA.Count);
                 LuoKysymys();
-                // Soita "oikea" ‰‰ni
+                // Soita oikein ‰‰ni
                 oikeinAani.Play();
             }
             else
@@ -172,7 +173,7 @@ public class KysymysManageri : MonoBehaviour
     //    Vaarintxt.SetActive(false);
     //}
     private void TarkistaVoitto()
-    {
+    {// Tarkistetaan voittoehdot ja p‰ivitet‰‰n pelitila
         Debug.Log("TarkistaVoitto, oikeatVastauksetLaskuri: " + oikeatVastauksetLaskuri);
 
         if (oikeatVastauksetLaskuri >= 3)
@@ -201,12 +202,14 @@ public class KysymysManageri : MonoBehaviour
 }
 
     void LaitaVastaukset()
-    {
+    {// Asetetaan vastaukset vaihtoehtoihin
         for (int i = 0; i < vaihtoehdot.Length; i++)
-        {
+        {// Nollataan onOikein muuttuja jokaiselle vaihtoehdolle
             vaihtoehdot[i].GetComponent<VastausScript>().onOikein = false;
+            // Asetetaan vastaus tekstiksi vaihtoehdolle
             vaihtoehdot[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = QnA[nykyinenKysymys].Vastaukset[i];
 
+            // Jos vastaus on oikein, p‰ivitet‰‰n onOikein muuttuja
             if (QnA[nykyinenKysymys].OikeaVastaus == i + 1)
             {
                 vaihtoehdot[i].GetComponent<VastausScript>().onOikein = true;
@@ -226,9 +229,14 @@ public class KysymysManageri : MonoBehaviour
         // Piilota virheteksti
         Vaarintxt.SetActive(false);
 
+        // Arvotaan uusi kysymys
         nykyinenKysymys = Random.Range(0, QnA.Count);
         Debug.Log("Uusi kysymys: " + KysymysTxt.text);
+
+        // Asetetaan kysymys tekstiksi
         KysymysTxt.text = QnA[nykyinenKysymys].Kysymys;
+
+        // Asetetaan vastaukset vaihtoehtoihin
         LaitaVastaukset();
     }
 
