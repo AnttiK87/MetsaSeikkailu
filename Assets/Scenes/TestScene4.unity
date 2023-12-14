@@ -2722,6 +2722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 29353580}
   vinkkiAani: {fileID: 1644365918}
+  kursorinVaihto: {fileID: 1888670852}
 --- !u!65 &748953647
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3625,6 +3626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 250810874}
   vinkkiAani: {fileID: 1644365918}
+  kursorinVaihto: {fileID: 1888670852}
 --- !u!65 &1107116762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5519,11 +5521,11 @@ MonoBehaviour:
   QnA:
   - Kysymys: "Kuka min\xE4 olen?"
     Vastaukset:
-    - "Tunturip\xF6ll\xF6"
     - "Varpusp\xF6ll\xF6"
+    - "Tunturip\xF6ll\xF6"
     - "Helmip\xF6ll\xF6"
     - "Lehtop\xF6ll\xF6"
-    OikeaVastaus: 2
+    OikeaVastaus: 1
   - Kysymys: Millon saniaiset kukkivat?
     Vastaukset:
     - "Ne eiv\xE4t kuki"
@@ -6862,6 +6864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VinkkiCanvas: {fileID: 362784858}
   vinkkiAani: {fileID: 1644365918}
+  kursorinVaihto: {fileID: 1888670852}
 --- !u!65 &1879296243
 BoxCollider:
   m_ObjectHideFlags: 0

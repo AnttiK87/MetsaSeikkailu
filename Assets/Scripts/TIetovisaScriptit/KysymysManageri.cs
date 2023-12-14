@@ -27,6 +27,16 @@ public class KysymysManageri : MonoBehaviour
 
     public Text KysymysTxt;
 
+    public static KysymysManageri kysymysManageri { get; private set; }
+    private void Awake()
+    {
+        if (kysymysManageri == null)
+        {
+            kysymysManageri = this;
+            // Additional initialization code if needed
+        }
+    }
+
     private void Start()
     {
         
