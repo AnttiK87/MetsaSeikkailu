@@ -18,27 +18,13 @@ public class KysymyksetPollo : MonoBehaviour
     public GameObject vinkki3;
     public GameObject vinkki4;
     public GameObject kyselija;
-    public KysymysManageri kysymysManageri;
-    private List<GameObject> TagattavatObjektit = new List<GameObject>();
-    public KursorinVaihto kursorinVaihto;
+    public KysymysManageri kysymysManageri; //kutsutaan luokkaa KysymysManageri
+    public KursorinVaihto kursorinVaihto; //kutsutaan luokkaa KursorinVaihto
 
 
 
     //laskuri, ett‰ ensimm‰inen ui ruutu n‰ytet‰‰n vain ensimm‰isell‰ kertaa
     private int counter = 0;
-
-    void Start()
-    {
-        // Assign game objects to the list
-        TagattavatObjektit.Add(objekti1);
-        TagattavatObjektit.Add(objekti2);
-        TagattavatObjektit.Add(objekti3);
-        if (objekti4 != null)
-        {
-            TagattavatObjektit.Add(objekti4);
-        }
-    }
-
 
     //Objekti johon scripti on liitetty toimimaan nappina
     private void OnMouseUpAsButton()
@@ -55,16 +41,20 @@ public class KysymyksetPollo : MonoBehaviour
         //jos aloitusteksti on jo n‰hty n‰ytet‰‰n suoraan kysymykset
         else if (panel1 == null && kysymysManageri != null)
         {
+            //Kutsutaan kursorin vaihdon pois ottamista
             kursorinVaihto.DeaktivoiScript();
 
+            //yhdess‰ sceness‰ vaan nelj‰ vinkki‰ joten siksi n‰in
             if (vinkki4 == null)
             {
+                //Vinkki objektit pois p‰‰lt‰, ett‰ eiv‰t aukea yht‰aikaa muun ui:n kanssa
                 if (!vinkki1.activeSelf && !vinkki2.activeSelf && !vinkki3.activeSelf)
                 {
                     objekti1.SetActive(false);
                     objekti2.SetActive(false);
                     objekti3.SetActive(false);
 
+                    //n‰ytet‰‰n kysymykset
                     kysymysManageri.AktivoiTietoVisaCanvas();
                 } 
             }
@@ -89,6 +79,8 @@ public class KysymyksetPollo : MonoBehaviour
         if (panel1 != null)
         {
             panel1.SetActive(true);
+
+            //osoittimen vaihto poisp‰‰lt‰
             kursorinVaihto.DeaktivoiScript();
         }
     }
@@ -102,7 +94,7 @@ public class KysymyksetPollo : MonoBehaviour
 
 }
 
-    //t‰m‰ metodi liitet‰‰n ekan ui n‰ytˆn vinkki nappeihin
+    //t‰m‰ metodi liitet‰‰n ui n‰ytˆn vinkki nappeihin/nappiin
     public void VinkkiNappi()
     {
         panel2.SetActive(false);
@@ -114,13 +106,7 @@ public class KysymyksetPollo : MonoBehaviour
             objekti4.SetActive(true);
         }
 
-        foreach (GameObject obj in TagattavatObjektit)
-        {
-            if (obj != null)
-            {
-                obj.tag = "Vinkkaaja";
-            }
-        }
+        //ui menee kinni joten kursorin vaihto aktivoidaan
         kursorinVaihto.AktivoiScript();
     }
 }
