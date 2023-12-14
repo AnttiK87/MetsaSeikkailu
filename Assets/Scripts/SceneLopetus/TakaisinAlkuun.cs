@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class TakaisinAlkuun : MonoBehaviour
 {
-    public Animator Haivytys;
-
-    public float Haivytysaika = 3f;
+    public Animator Haivytys; // haivytys animaattori
+     
+    public float Haivytysaika = 3f; // haivytys aika
     public void Takaisin() // kun painetaan nappia palataan alkunäyttöön
     {
         PelinKestoScripti ajastin = FindObjectOfType<PelinKestoScripti>(); // etsitään pelin kesto scripti
@@ -15,16 +15,15 @@ public class TakaisinAlkuun : MonoBehaviour
         {
             ajastin.NollaaAjastin(); // nollataan ajastin
         }
-        StartCoroutine(HaivytysKutsu(0));
+        StartCoroutine(HaivytysKutsu(0)); // kutsutaan haivytyskutsu metodia
     }
 
-    IEnumerator HaivytysKutsu(int levelIndex)
+    IEnumerator HaivytysKutsu(int levelIndex) // haivytyskutsu metodi
     {
-        Haivytys.SetTrigger("Alku");
+        Haivytys.SetTrigger("Alku"); // käynnistetään haivytys animaatio
 
-        yield return new WaitForSeconds(Haivytysaika);
+        yield return new WaitForSeconds(Haivytysaika); // odotetaan haivytysaika
 
-        // Haetaan nykyisen kentän numero
-        SceneManager.LoadScene(levelIndex);
+        SceneManager.LoadScene(levelIndex);// Haetaan nykyisen kentän numero
     }
 }

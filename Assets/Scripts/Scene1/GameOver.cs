@@ -4,17 +4,6 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     // kun painetaan nappia niin lopetetaan peli ja siirryt‰‰n sceneen 8
     public void LopetaPeli()

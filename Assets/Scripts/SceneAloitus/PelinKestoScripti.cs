@@ -14,7 +14,7 @@ public class PelinKestoScripti : MonoBehaviour // scripti joka laskee pelin kest
 
     void Awake() // ei tuhoa t‰t‰ scripti‰ kun vaihdetaan scene‰
     {
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject); // ei tuhoa t‰t‰ scripti‰ kun vaihdetaan scene‰
         SceneManager.sceneLoaded += OnSceneLoaded; // lis‰t‰‰n listeneri, joka kutsuu OnSceneLoaded funktiota kun scene vaihtuu
     }
 
@@ -24,7 +24,7 @@ public class PelinKestoScripti : MonoBehaviour // scripti joka laskee pelin kest
     }
 
 
-    public void LisaaAikaa() // lis‰‰ aikaa
+    public void LisaaAikaa() // lis‰‰ aikaa metodi, jota kutsutaan kun vastataan v‰‰rin
     {
         if (ajastinKaynnissa)
         {
@@ -32,11 +32,11 @@ public class PelinKestoScripti : MonoBehaviour // scripti joka laskee pelin kest
         }
     }
 
-    IEnumerator TimerDebugCoroutine()
+    IEnumerator TimerDebugCoroutine() // Coroutine joka debuggaa ajastimen aikaa
     {
-        while (ajastinKaynnissa)
+        while (ajastinKaynnissa) // kun ajastin on k‰ynniss‰
         {
-            Debug.Log("Timerin aika on: " + Time.time + " Vaarat Vastaukset on: " + vaaratVastaukset);
+            Debug.Log("Timerin aika on: " + Time.time + " Vaarat Vastaukset on: " + vaaratVastaukset); // tulostetaan ajastimen aika ja v‰‰rien vastausten aika
             yield return new WaitForSeconds(1f); // Odotetaan 1 sekunti ennen seuraavaa p‰ivityst‰
         }
     }
@@ -61,7 +61,7 @@ public class PelinKestoScripti : MonoBehaviour // scripti joka laskee pelin kest
 
         StopCoroutine(TimerDebugCoroutine()); // Lopeta Coroutine
     }
-    public void NollaaAjastin()
+    public void NollaaAjastin() //metodi joka nollaa ajastimen
     {
         kulunutAika = 0; // kulunut aika on 0
         aloitusaika = Time.time; // aloitusaika on nykyinen aika

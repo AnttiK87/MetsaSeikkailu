@@ -31,7 +31,7 @@ public class HaeAika : MonoBehaviour
         {
             print("PelinKestoScripti not found"); // jos pelin kesto scriptiä ei löydy annetaan error
         }
-        Debug.Log("Tallennettu ennätysaika: " + PlayerPrefs.GetFloat("EnnatysAika", float.MaxValue));
+        Debug.Log("Tallennettu ennätysaika: " + PlayerPrefs.GetFloat("EnnatysAika", float.MaxValue)); // debuggausta varten
     }
 
     void PäivitäEnnätysAika(int minuutit, int sekunnit) // metodi päivittää ennätysajan

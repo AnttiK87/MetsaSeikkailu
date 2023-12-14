@@ -11,8 +11,8 @@ public class InfoNappi : MonoBehaviour
 
     void Awake() // ei tuhoa tätä scriptiä tai info objekteja kun vaihdetaan sceneä
     {
-        DontDestroyOnLoad(gameObject);
-        DontDestroyOnLoad(infoNappiCanvas);
+        DontDestroyOnLoad(gameObject); // ei tuhoa tätä scriptiä kun vaihdetaan sceneä
+        DontDestroyOnLoad(infoNappiCanvas); // ei tuhoa info nappi canvasia kun vaihdetaan sceneä
 
     }
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode) // kun scene vaihtuu
@@ -32,8 +32,7 @@ public class InfoNappi : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded; 
     }
 
-    //kun painetaan info nappia niin info paneeli tulee näkyviin ja kun painetaan uudestaan se menee pois näkyvistä
-    public void InfoNappiPainettu()
+    public void InfoNappiPainettu()//kun painetaan info nappia niin info paneeli tulee näkyviin ja kun painetaan uudestaan se menee pois näkyvistä
     {
         if (!infoPanel.activeSelf && infoPanel != null) // jos info panel ei ole aktiivinen ja se ei ole null
         {
