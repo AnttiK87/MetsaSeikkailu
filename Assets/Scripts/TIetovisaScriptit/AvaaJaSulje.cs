@@ -18,43 +18,23 @@ public class AvaaJaSulje : MonoBehaviour
         }
     }
 
-    //Osalla objekteista on kaksi tehtävää. Esim telkänpönttö muuttuu vinkki objektiksi sitten kun alun animaatiot on näytetty
-    //Vinkki objekteille annetaan tagiSiksi tämä on tehty väh
+    //objekti johon scripti on liitetty toimii nappina
+    //klikkaamalla kutsutaan metodia joka aktivoi halutun ui objektin
     private void OnMouseUpAsButton()
     {
-        // Määritetään klikattiinko objektia ja mikä se oli
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        //Jos osui objektiin
-        if (Physics.Raycast(ray, out hit))
-        {
-            // Haetaan objektille oleva tagi 
-            if (hit.collider.gameObject.tag != null)
-            {
-                //tallennetaan tagi muuttujaan
-                klikattu = hit.collider.gameObject.tag;
-            }
-
-            if (klikattu.Equals("Vinkkaaja"))
-            {
-                //Debug.Log("nappia painettu");
-                ActivateVinkki1();
-            }
-        }
+        //Debug.Log("nappia painettu");
+        ActivateVinkki1();
     }
 
     //Avataan vinkki
     void ActivateVinkki1()
     {
-
+            //Jos vinkki on olemassa/määritetty ´ja muita vinkkejä ei ole auki
             if (VinkkiCanvas != null && !GameObject.FindWithTag("Vinkki"))
             {
                 VinkkiCanvas.SetActive(true);
                 vinkkiAani.Play();
-        }
- 
-   
+            }
     }
 
     //suljetaan vinkki

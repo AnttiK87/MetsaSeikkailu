@@ -162,9 +162,15 @@ public class KysymysManageri : MonoBehaviour
             // Soita "v‰‰r‰" ‰‰ni
             vaarinAani.Play();
         }
+        // Varmista, ett‰ Vaarintxt on poissa p‰‰lt‰, vaikka virheilmoituksessa olisi ongelma
+       // StartCoroutine(SuljeVaarintxt());
     
 }
-
+    //private IEnumerator SuljeVaarintxt()
+    //{
+    //    yield return new WaitForSeconds(2f);  // Voit muuttaa odotusaikaa tarpeen mukaan
+    //    Vaarintxt.SetActive(false);
+    //}
     private void TarkistaVoitto()
     {
         Debug.Log("TarkistaVoitto, oikeatVastauksetLaskuri: " + oikeatVastauksetLaskuri);
