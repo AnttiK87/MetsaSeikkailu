@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class AvaaJaSulje : MonoBehaviour
 {
+    //Vinkkejen avaamiseen ja sulkemiseen
 
+    //muuttujat
     public GameObject VinkkiCanvas;
     public AudioSource vinkkiAani;
     private string klikattu;
     public KursorinVaihto kursorinVaihto;
 
+    //Vinkit pois p‰‰lt‰ alussa
     public void Start()
     {
         if (VinkkiCanvas != null)
@@ -18,6 +21,7 @@ public class AvaaJaSulje : MonoBehaviour
         }
     }
 
+    //Osalla objekteista on kaksi teht‰v‰‰, joten tagilla tarkastus onko objekti jo vinkki "tilassa"
     private void OnMouseUpAsButton()
     {
         // M‰‰ritet‰‰n klikattiinko objektia ja mik‰ se oli
@@ -41,6 +45,7 @@ public class AvaaJaSulje : MonoBehaviour
         }
     }
 
+    //N‰ytet‰‰n vinkki
     void ActivateVinkki1()
     {
 
@@ -54,6 +59,7 @@ public class AvaaJaSulje : MonoBehaviour
    
     }
 
+    //Suljetaan vinkki
     public void suljeVinkki1()
     {
         VinkkiCanvas.SetActive(false);

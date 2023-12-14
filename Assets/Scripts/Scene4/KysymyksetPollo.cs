@@ -27,9 +27,10 @@ public class KysymyksetPollo : MonoBehaviour
     //laskuri, ett‰ ensimm‰inen ui ruutu n‰ytet‰‰n vain ensimm‰isell‰ kertaa
     private int counter = 0;
 
+
     void Start()
     {
-        // Assign game objects to the list
+        // Vinkki objektit listaan tagin antamista varten
         TagattavatObjektit.Add(objekti1);
         TagattavatObjektit.Add(objekti2);
         TagattavatObjektit.Add(objekti3);
@@ -57,6 +58,7 @@ public class KysymyksetPollo : MonoBehaviour
         {
             kursorinVaihto.DeaktivoiScript();
 
+            //T‰m‰ koska yhdess‰ sceness‰ on vain kolme vinkki‰
             if (vinkki4 == null)
             {
                 if (!vinkki1.activeSelf && !vinkki2.activeSelf && !vinkki3.activeSelf)

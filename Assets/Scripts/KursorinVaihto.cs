@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class KursorinVaihto : MonoBehaviour
 {
+    //Tämän luokan metodeja kutsutaan muualla aina tarpeen mukaan
 
+    //Unityssa asetetaan objektit joiden päällä kursori muuttuu tähän arrayhin
     public GameObject[] objectsToCheck;
 
+    //Boxcollider otetaan taas käyttöön tätä kutsuttaessa
     public void AktivoiScript()
         {
         foreach (var obj in objectsToCheck)
         {
             if (obj != null)
             {
-                // Disable the BoxCollider component if it exists
                 BoxCollider boxCollider = obj.GetComponent<BoxCollider>();
                 if (boxCollider != null)
                 {
@@ -23,7 +25,7 @@ public class KursorinVaihto : MonoBehaviour
         }
     }
 
-
+    //Metodia kutsuttaessa arrayn objekteilta otetaan boxcollider komponentti pois käytöstä joten osoitin ei enää muutu sen yllä
     public void DeaktivoiScript()
     {
 
@@ -31,7 +33,6 @@ public class KursorinVaihto : MonoBehaviour
         {
             if (obj != null)
             {
-                // Disable the BoxCollider component if it exists
                 BoxCollider boxCollider = obj.GetComponent<BoxCollider>();
                 if (boxCollider != null)
                 {

@@ -10,6 +10,7 @@ public class SeuraavaScene : MonoBehaviour
     public Animator Haivytys;
 
     public float Haivytysaika = 3f;
+
     //Objekti johon scripti on liitetty toimimaan nappina
     private void OnMouseUpAsButton()
     {
@@ -31,13 +32,15 @@ public class SeuraavaScene : MonoBehaviour
         StartCoroutine(HaivytysKutsu(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
+    //Tällä Viivästetään kentän lataamista, että häivytysanimaatio saadaan ajettua loppuun.
     IEnumerator HaivytysKutsu(int levelIndex)
     {
+        //trikkeröidään animaatiossa oleva "siirtymä" alku
         Haivytys.SetTrigger("Alku");
 
         yield return new WaitForSeconds(Haivytysaika);
 
-        // Haetaan nykyisen kentän numero
+        //ladataan kenttä annetun indeksi luvun mukaan
         SceneManager.LoadScene(levelIndex);
     }
 }

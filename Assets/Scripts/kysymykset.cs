@@ -30,9 +30,9 @@ public class kysymykset : MonoBehaviour
     //laskuri, ett‰ ensimm‰inen ui ruutu n‰ytet‰‰n vain ensimm‰isell‰ kertaa
     private int counter = 0;
 
+    // Vinkki objektit listaan tagin antamista varten
     void Start()
     {
-        // Assign game objects to the list
         TagattavatObjektit.Add(objekti1);
         TagattavatObjektit.Add(objekti2);
         TagattavatObjektit.Add(objekti3);

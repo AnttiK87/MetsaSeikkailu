@@ -31,6 +31,7 @@ public class TelkkaPerhe : MonoBehaviour
         }
     }
 
+    //Ui ruutu n‰kym‰‰n
     void ActivateObject()
     {
         if (!panel.activeSelf && panel != null)
@@ -40,6 +41,7 @@ public class TelkkaPerhe : MonoBehaviour
         }
     }
 
+    //telkk‰perhe pois animaatio k‰yntiin
     void ActivateObject2()
     {
         telkkaUintiPois.SetActive(false);
@@ -48,6 +50,7 @@ public class TelkkaPerhe : MonoBehaviour
         punarintaAktivointi.SetActive(true);
     }
 
+    //Ui kiinni ja telkk‰ perheen luo
     public void DeactivateObject()
     {
         panel.SetActive(false);
