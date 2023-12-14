@@ -15,7 +15,8 @@ public class Kyselija : MonoBehaviour
         ActivateObject();
     }
 
-    // Kyselijän aktivointi metodi
+    // Kyselijän aktivointi metodi. Pelissä kameran kääntö objektia kohti ja animaatioiden aloitus hyödyntää sitä, että objekti tulee aktiiviseksi.
+    //Siksi tämän tyylistä ratkaisua käytetty paljon. 
     void ActivateObject()
     {
         if (kyselija != null)
